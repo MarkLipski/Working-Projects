@@ -1,0 +1,54 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{subcaption}
+
+\begin{document}
+	\section{1-D Model}
+	\subsection{Plan of Attack}
+	First, the 1-D approximation assumes that the material is a uniform sheet in the y and z axis, with differences occurring over the x-axis. Each unit section of material has its own electrical properties, which will be used in the calculations. \\
+	
+	An electron cloud model will be used, in which each unit area of material can act as an infinite source and sink for electrons. \\
+	
+	Next, all unit elements can be assumed to have some resistivity ($\rho$), ranging (0 $<$ $\rho$ $<$ $\infty$). Presumably, conductors would have a finite $\rho$, while insulators would have a near infinite. Next is the electrical permittivity ($\epsilon$) for each unit material. While this can largely be ignored for conductors, it is required for insulators. \\
+	
+	The last factors are the inputs and outputs to the system, those being the applied voltage, and the resulting current density. Additionally, the voltage as a function of position would be a useful factor to include, in order to make visualizing the system possible.
+	
+	\subsection{Math}
+	The goal of this model is to express all the effects of voltage on a circuit in terms of applied electrical force. The rest of the model will then be a result of current flow resulting from the applied electrical field on each unit of material.
+	
+	\subsubsection{Electrical Field}
+	The electrical force on each unit element can be calculated based on the charge distributed to the right and left of that point in space. The electrical field resulting from some charge distributed at a point in space can be calculated using Gauss's law,
+	\begin{equation}
+	D = \frac{Q}{\epsilon_0},
+	\end{equation}
+	which is based on the total electrical flux through a surface ($D$) surrounding a unit of charge ($Q$) and the electrical permittivity of free space ($\epsilon_0$). Now, assuming that the surface created is geometrically similar to that of that of the enclosed charge, then the electrical flux will be uniform across the surface. In the case of a charge density which extends infinitely across the y and z dimensions, we can use a box to enclose this section. Given that the surface extends infinitely in the y and z dimensions, the only resulting electrical field is in the x direction.
+	
+	The electrical flux in the x-direction includes only the two faces of the box on either side of the charge. As the surface is symmetric, the total electrical flux in the x-direction is simply,
+	\begin{equation}
+	D_x = \frac{Q}{2\epsilon_0},
+	\end{equation}
+	as there are two faces on the surface. In order to convert this to electrical field ($E$), some manipulation is required, where we must use the charge per unit y, and z $\left(\frac{d^2Q}{dzdy}\right)$,
+	\begin{equation}
+	E_x = \frac{d^2D_x}{dzdy} = \frac{d^2Q}{dzdy}\frac{1}{2\epsilon_0},
+	\end{equation}
+	which means that our variable of interest are the charge density of each unit element. One interesting thing to note is that the electrical field produced is independent of $x$, only changing in sign based on your orientation relative to the distributed charge.
+	
+	Thus, the electric field at a point in space in the 1-D approximation can be generated using the charge density to the left and right of that point, where
+	\begin{equation}
+	E_x = \frac{1}{2\epsilon_0}\left(\sum_{n=0}^{x}\rho_n - \sum_{n=x+1}^{L}\rho_n \right).
+	\end{equation}
+	
+	\subsubsection{Current Flow}
+	The resulting current density through a point in space can be calculated using the conductivity of that material in combination with the applied electrical field at that point in space,
+	\begin{equation}
+	J_x = \sigma E_x = \frac{d\rho_x}{dt}.
+	\end{equation}
+	
+	
+\end{document}
