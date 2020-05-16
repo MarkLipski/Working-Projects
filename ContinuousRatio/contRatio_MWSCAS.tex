@@ -10,24 +10,28 @@
 \usepackage{cuted}
 
 \title{A Steady State Model for the Continuous Conversion Ratio Charge Pump}
+\author{Mark Lipski}
 
 \begin{document}
 	\maketitle
+	\section{Abstract}
+	This paper constructs a steady state model of the continuous conversion ratio charge pump architecture from first principles, incorporating incomplete charge transfer and finite switch resistance. The model is then verified using a pspice model of the circuit, and the limitations of the assumptions are discussed.
 	\section{Introduction}
 	The rise of IoT has driven the development of various ultra low power, low cost mobile systems. This results in a need for high efficiency, low cost power electronics.
 	
-	One extremely promising candidate for addressing many of the needs of industry is the continuously scalable charge pump proposed in \cite{Butzen2019	}. The proposed structure has the benefit of providing a completely variable conversion ratio while maintaining high efficiencies. 
+	One candidate for addressing many of the needs of industry is the continuous conversion charge pump proposed in \cite{Butzen2019	}. The proposed structure has the benefit of providing a completely variable conversion ratio while maintaining high efficiencies. 
 	
 	The development of models for the structure will facilitate reduced design times, and a more streamlined design flow. One of the important aspects of the continuous ratio converter is the resulting impact of incomplete charge transfer on the efficiency and performance of the converter. The following work proposes a steady state model that will incorporate the effects of incomplete charge transfer into the existing equations for input and output current.
 	
-	The structure of the paper is as follows, first, a model of the charge pump will be generated. Next, the results of the model are then compared to simulations performed in LTspice. The results are then discussed, along with the validity of the assumptions.
+	The structure of the paper is as follows, first, a model of the charge pump will be generated. Next, the results of the model are then compared to simulations performed using pspice. The results are then discussed, along with the validity of the assumptions.
 	\section{Steady State Model}
 	The circuit to be analyzed is the continuous conversion ratio circuit as seen in \cite{Butzen2019}, which can be seen in Fig. \ref{fig:contTop}. The various steps are numbered along with their associated capacitors in Fig. \ref{fig:contTop}, and will be used further in the analysis. The circuit diagram corresponding to a single flying capacitor and its switches (also referred to as a "core") can be seen in Fig. \ref{fig:coreCon}. The analysis and modeling is performed under the following assumptions,
 	\begin{itemize}
 		\item All the capacitors are linear.
 		\item The top and bottom plate parasitic capacitance's have minimal impact on the transient and steady state characteristics of the converter, and are neglected from the analysis.
 		\item All the flying capacitors are equally sized with capacitance $C_{Fly}$, where $C_{Fly} = C_{1,0} = C_{1,1} = C_{2,0} = C_{2,M} ...$
-		\item The switches for the intermediary nodes, $S_{T1}, S_{T2}, S_{TM}, S_{B1}, S_{BN}, etc$, all have an equivalent resistance $R_{ON}$. The resistance of the switches which connect to the positive and negative rails is 0$\Omega$ ($S_{T+}, S_{T-}, S_{B+}, S_{B-}$).
+		\item The input and output voltages $V_{IN}$, and $V_{OUT}$ are constant and ideal.
+		\item The switches for the intermediary nodes, $S_{T1}, S_{T2}, S_{TM}, S_{B1}, S_{BN}, etc$, all have an equivalent resistance $R_{ON}$. The resistance of the switches which connect to the positive and negative rails ($S_{T+}, S_{T-}, S_{B+}, S_{B-}$) is 0$\Omega$ .
 	\end{itemize}
 	\begin{figure}
 		\centering
@@ -37,7 +41,7 @@
 	\end{figure}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.8\linewidth]{Figures/contRatioCore.pdf}
+		\includegraphics[width=0.6\linewidth]{Figures/contRatioCore.pdf}
 		\caption{Circuit diagram illustrating the top and bottom connections of a single flying capacitor.}
 		\label{fig:coreCon}
 	\end{figure}
@@ -48,17 +52,17 @@
 		\centering
 		\begin{subfigure}{0.4\textwidth}
 			\centering
-			\includegraphics{Figures/step2_Circ.pdf}
+			\includegraphics[width=0.45\linewidth]{Figures/step2_Circ.pdf}
 			\caption{Circuit configuration including switches and flying capacitors.}
 			\label{fig:step_Circ1}
 		\end{subfigure}
 		\begin{subfigure}{0.4\textwidth}
 			\centering
-			\includegraphics{Figures/step2_Eq.pdf}
+			\includegraphics[width=0.35\linewidth]{Figures/step2_Eq.pdf}
 			\caption{Equivalent circuit with values.}
 			\label{fig:step_Circ2}	
 	\end{subfigure}
-		\caption{Example circuit diagrams showing the connection to $B_1$.}
+		\caption{Example circuit diagrams showing the connection to $B_N$.}
 	\end{figure}
 
 	\begin{figure}
@@ -79,7 +83,8 @@
 	\end{equation}
 	where $V_{C}[n-1]$ is the voltage at the end of previous step, while $V_{int}$ is the voltage of the intermediary node ($V_{T1}$, $V_{TM}$, $V_{B1}$, etc) which the capacitor is connected to. Next, the duration of each time step can be incorporated into the analysis using the switching frequency ($f_{SW}$). A substitution can then be made to simplify the analysis, where
 	\begin{equation}
-	A = 1-\exp\left(\frac{-1}{\tau f_{SW}}\right),
+	A = 1-\exp\left(\tfrac{-1}{\tau f_{SW}}\right),
+	\label{eq:A}
 	\end{equation}
 	which can be substituted into (\ref{eq:Vstepn}) for example
 	\begin{equation}
@@ -172,8 +177,9 @@
 	\vdots\\
 	Q_{B2} \\ 
 	Q_{B1}
-	\end{bmatrix}
-	=
+	\end{bmatrix}\!
+	= \!
+	C_{Fly}\!
 	\begin{bmatrix}
 	-A \!& 0 & \dots & 0 & 0 \\
 	A^2 \!& -A & \dots & 0 & 0\\
@@ -186,12 +192,12 @@
 	\vdots \\
 	V_{B2} \\
 	V_{B1}
-	\end{bmatrix}\!C\\+CV_{DD}\begin{bmatrix}
+	\end{bmatrix}\!+ C_{Fly}V_{DD}\!\begin{bmatrix}
 	A \\
 	A(1-A) \\
 	\vdots \\
-	A(1-A)^{N-2} \\
-	A(1-A)^{N-1}
+	A(1\!-\!A)^{N-2} \\
+	A(1\!-\!A)^{N-1}
 	\end{bmatrix}
 	\label{eq:Q_V1}
 	\end{equation}	
@@ -208,6 +214,7 @@
 	Q_{B1}
 	\end{bmatrix}
 	=
+	C_{Fly}
 	\begin{bmatrix}
 	-A \!& A^2 & \dots & A^2(1\!-\!A)^{N-3} & A^2(1\!-\!A)^{N-2} \\
 	0 \!& \!-A & \dots & A^2(1\!-\!A)^{N-4} & A^2(1\!-\!A)^{N-3}\\
@@ -245,7 +252,7 @@
 	V_{-}^{3,x} = \frac{xAV_{OUT}}{A(N-1) + 2},
 	\end{equation}
 	\begin{equation}
-	V_{+}^{4,x} = V_{OUT} + \frac{xA(V_{IN} -V_{OUT})}{A(N-1) + 2}.
+	V_{+}^{4,x} = V_{OUT} + \tfrac{xA(V_{IN} -V_{OUT})}{A(N-1) + 2}.
 	\end{equation}
 	In order to calculate the input and output currents of the converter, a charge balance method will be used. The charge delivered to the output can be observed from Fig. \ref{fig:contTop}, where it occurs on steps (1,0), (3,0)$\rightarrow$(3,N) and (4,1)$\rightarrow$(4,M). The charge transferred on the steps is as follows,
 	\begin{equation}
@@ -270,7 +277,7 @@
  	\begin{split}
  	Q_{IN} &= C_{Fly}\left(V_{IN} - V_+^{4,M} + V_{OUT}\right) \\
  	Q_{IN} &= C_{Fly}\!\left(V_{IN} - V_{OUT} - \tfrac{MA(V_{IN}\! -\!V_{OUT})}{A(M-1) + 2} + V_{OUT}\!\right) \\
- 	Q_{IN} &= C_{Fly}\frac{MAV_{OUT} + (2-A)V_{IN}}{A(M-1) + 2}
+ 	Q_{IN} &= C_{Fly}\tfrac{MAV_{OUT} + (2-A)V_{IN}}{A(M-1) + 2}
  	\end{split}
  	\end{equation}
  	The input and output charge can then be used in combination with the switching frequency to acquire the input and output power,
@@ -289,30 +296,48 @@
  	The efficiency can then be calculated using the input and output power, and is then graphed and compared to some simulation results with ideal components. Fig. \ref{fig:Comp_VIn} plots the efficiency in comparison to input voltage, while Fig. \ref{fig:Comp_A} plots efficiency in comparison to $A$.
  	
  	\begin{figure}
- 		\begin{subfigure}{0.5\textwidth}
+ 		\centering
+ 		\begin{subfigure}{0.4\textwidth}
+ 			\centering
  			\includegraphics[width=\linewidth]{Figures/eta_VIn.pdf}
- 			\caption{Comparison with constant $A = 1$ and $V_{OUT} = 1$.}
+ 			\caption{Comparison using $A = 1$ and $V_{OUT} = 1$.}
  			\label{fig:Comp_VIn}
  		\end{subfigure}
- 	\begin{subfigure}{0.49\textwidth}
+ 	\begin{subfigure}{0.4\textwidth}
  		\includegraphics[width=\linewidth]{Figures/eta_A.pdf}
- 		\caption{Comparison with constant $V_{IN} = 2.5$ and $V_{OUT} = 1$.}
+ 		\caption{Comparison using $V_{IN} = 2.5$ and $V_{OUT} = 1$.}
  		\label{fig:Comp_A}
  	\end{subfigure}
  		\caption{Verification of the calculated efficiency. The simulations were setup to conform to the model assumptions.}
  	\end{figure}
- 
+ 	\subsection{Incorporating Transistor Switching Losses}
+ 	The power lost switching the gates of the transistors on and off can either be added to $P_{IN}$, or subtracted from $P_{OUT}$, depending on the bootstrapping and control method used. The power can be calculated using $f_{SW}$, along with the total gate capacitance of all the switches ($C_{G}$), and the switching voltage $V_{SW}$,
+ 	\begin{equation}
+ 	P_{SW} = f_{SW}V_{SW}^2C_G.
+ 	\end{equation}
+ 	This will allow the designer to fully calculate the design trade-off associated with transistor sizing. 
+ 	
+ 	
  	\section{Steady State Model Usefulness}
  	The usefulness of the model is going to be dependent on how accurate the underlying assumptions are, these will now be discussed. 
  	\subsection{Switch Resistance}
- 	The model used assumes constant switch resistance, however the switches are implemented using real transistors. The resistance model for long channel NMOS transistors is,
+ 	The fixed, time invariant on-resistance of the transistors is an approximation, however the relative bias structure used in \cite{Butzen2019} should eliminate the variation in $R_{ON}$ based on the top and bottom plate voltages.
+ 	
+ 	The next portion of this assumption is that switches $S_{B+}$, $S_{B-}$, $S_{T+}$ and $S_{T-}$ have a resistance of 0$\,\Omega$. The reality is that these switches should be sized a factor $\sqrt{M+1}$ or $\sqrt{N+1}$ larger than the other transistors in order to minimize both capacitive and resistive losses. The designer then only needs to incorporate this resistance into (\ref{eq:A}), 
  	\begin{equation}
- 	R_{ON} = \frac{L}{WC_{OX}\mu_N V_{GS}},
+ 	A = 1-\exp\left(\tfrac{-1}{C_{Fly}R_{ON}(1+\sqrt{M+1}) f_{SW}}\right),
  	\end{equation}
- 	where $L$ and $W$ are the channel length and width respectively, $C_{OX}$ is the capacitance density of the oxide layer, $\mu_N$ is the carrier mobility, and $V_{GS}$ is the gate voltage relative to the source. This would make $R_{ON}$ dependent on the bottom plate voltage of $C_{Fly}$ (provided $V_G$ is a constant voltage) as $V_{S}$ is going to be determined by the bottom plate voltage. However, if the relative voltage rail configuration is used, as proposed in \cite{Butzen2019}, this can be avoided, and the switches can be modeled as having constant resistance $R_{SW}$. This techniques is used for the PMOS as well again, resulting in a near constant $R_{SW}$.
+ 	which will approximate the resulting impact on performance.
+ 	\subsection{Constant $V_{IN}$ and $V_{OUT}$}
+ 	This assumption is going to depend entirely on the filtering capacitors used at the input and output. Realistically, there is going to be a reduction in the efficiency resulting from ripple in the input and output. This can be reduced by adapting the out-phasing technique used in \cite{Le2010}, to the circuit.
  	
- 	The next portion of this assumption is that switches $S_{B+}$, $S_{B-}$, $S_{T+}$ and $S_{T-}$ have a resistance of 0$\,\Omega$. Clearly, this is not possible, as transistors always have some finite resistance. The motivation behind this design choice is that these transistors switch off and on at a far lower frequency than the other transistors. For example $S_{B+}$ is on for $M+1$ cycles, meaning that it should be sized a factor $\sqrt{M+1}$ larger than the other PMOS transistors.
+ 	\section{Discussion}
+ 	The proposed model is sufficiently useful for giving an approximation of the efficiency, and predicting its relationship with the transistor sizing. This can be used to quickly explore the design space, and optimize transistor sizing, along with selecting $N$ and $M$ with regards to the architecture. There exists a further need to incorporate additional effects into the model, such as transistor leakage effects, and exploring the exact impact of non-linearities on the performance of the configuration. 
  	
+ 	Finally, the model would benefit from further verification by incorporating post layout transistor models, as well as verifying the model using a fabricated device.
+ 	
+ 	\section{Conclusion}
+ 	In this paper, a steady state model of the continuous ratio charge pump architecture is presented. The model is then verified using pspice simulations, and the results are discussed.
  	
  	\bibliographystyle{IEEEtran}
  	\bibliography{contBib}
