@@ -22,13 +22,89 @@
 	\section{Steady State Model}
 	The Four terminal charge pump device used for the model can be seen in Fig. \ref{}. The motivation for selecting the associated model is its usefulness across various charge pump based dc-dc architectures. The model can be used in the Dickson, Series Parallel, and ladder configurations, as well as any combination of the three. 
 	
-	Next, the framework for constructing the four terminal model is largely based upon the work in \cite{}, which incorporates the transistor resistance into the calculation for input and output current. 
+	The internal circuit representation of the four terminal model can be seen in Fig. \ref{}, where $R_{Fly} = \frac{1}{f_{SW}C_{Fly}}$. However, this model neglects the impact of incomplete charge transfer on the output charge delivered, which limits its usefulness.
+	
+	The effect of incomplete charge transfer on the output and input charge characteristics of a dc-dc converter has been studied \ref{}. However, the model studied assumed ideal clock generation. The following analysis incorporates the resistance of clock drivers into the equations for input and output current. 
+	
+	\subsection{Incomplete Charge Transfer}
+	The associated analysis occurs at steady state  some assumptions:
+	\begin{itemize}
+		\item All the capacitors and resistors used in the analysis are linear and time invariant.
+		\item The value of $\alpha_T + \alpha_B < 0.1$.
+	\end{itemize}
+	Consider Fig. \ref{}, this circuit has two equivalent circuit states, which can be represented as in Fig. \ref{} and \ref{}. The first order approximation of the voltage at $V_{TP1}$ is,
+	\begin{equation}
+	V_{TP1}(t) = \exp\left(\frac{-t}{\tau}\right)V_{TP1}^{i} + \left(1 - \exp\left(\frac{-t}{\tau}\right)\right)V_{T1},
+	\end{equation}
+	where $\tau$ is,
+	\begin{equation}
+	\tau = 2R_{ON}C_{Fly}\left(1+\frac{\alpha_B+\alpha_T}{2}\right),
+	\end{equation}
+	and $V_{TP1}^i$ is the initial value of $V_{TP1}$ at the start of the first phase. The final value of $V_{TP1}$ can be evaluated at $t = \frac{T_{SW}}{2}$, as phase 1 occupies half the period,
+	\begin{equation}
+	V_{TP1}^f = V_{TP1}\left(\frac{T_{SW}}{2}\right).
+	\end{equation}	
+	Finally, a substitution can be made, relating to the exponential decay at the end of the time step,
+	\begin{equation}
+	A = \exp\left(-\frac{T_{SW}}{2\tau}\right),
+	\end{equation}
+	which can be used to create a simplified expression for $V_{TP1}^f$,
+	\begin{equation}
+	V_{TP1}^f = AV_{TP1}^i + (1-A)V_{T1}.
+	\end{equation}
+	To solve for $V_{TP1}^i$, the initial condition on $C_{Fly}$ must be known, which can be acquired from the prior state of the capacitor, in this case $V_{TP2}^f - V_{BP2}^f$. This, can then be represented as a voltage source as in Fig. \ref{}, yielding an initial condition of,
+	\begin{equation}
+	V_{TP1}^i = \frac{V_{TP2}^f - V_{BP2}^f + V_{T1} + V_{B1}}{2}.
+	\end{equation}
+	This can then be substituted into the prior equation for $V_{TP1}^f$, resulting in
+	\begin{equation}
+	V_{TP1}^f = A\left(\tfrac{V_{TP2}^f - V_{BP2}^f + V_{T1} - V_{B1}}{2}\right) + (1-A)V_{T1}.
+	\end{equation}
+	A similar procedure can then be repeated for the other nodal voltages,
+	\begin{equation}
+	V_{BP1}^f = AV_{TP1}^i + (1-A)V_{B1},
+	\end{equation}
+	\begin{equation}
+	V_{TP2}^f = AV_{TP2}^i + (1-A)V_{T2},
+	\end{equation}
+	\begin{equation}
+	V_{BP2}^f = AV_{BP2}^i + (1-A)V_{B2}.
+	\end{equation}
+	The associated initial conditions for the variables are,
+	\begin{equation}
+	V_{BP1}^i = \tfrac{V_{BP2}^f - V_{TP2}^f + V_{B1} + V_{T1}}{2},
+	\end{equation}
+	\begin{equation}
+	V_{TP2}^i = \tfrac{V_{TP1}^f - V_{BP1}^f + V_{T2} + V_{B2}}{2},
+	\end{equation}
+	\begin{equation}
+	V_{BP2}^i = \tfrac{V_{BP1}^f - V_{TP1}^f + V_{T2} + V_{B2}}{2}.
+	\end{equation}
+	Using the equations for the initial conditions and the final voltages, the final value of $V_{TP1}$ can be solved,
+	\begin{equation}
+	V_{TP1}^f = V_{T1} + \Delta V, 
+	\end{equation}
+	\textbf{CHECK THIS}
+	where 
+	\begin{equation}
+	\Delta V = \frac{A(V_{B1} - V_{T1} - V_{B2} + V_{T2})}{2(A+1)}.
+	\end{equation}
+	Similarly, the expressions for the other final voltages are,
+	\begin{equation}
+	V_{BP1}^f = V_{B1} - \Delta V,
+	\end{equation}
+	\begin{equation}
+	V_{TP2}^f = V_{T2} - \Delta V,
+	\end{equation}
+	and
+	\begin{equation}
+	V_{BP2}^f = V_{B2} + \Delta V.
+	\end{equation}
+	This can then be used to generate the circuit model seen in Fig. \ref{}, which will incorporate the effects of incomplete charge transfer.
+	
+	
 	
 	The leakage effects associated with the transistors are modelled using theory from the \cite{} transistor models. The testing is performed in pspice, using the PTM to simulate the transistors used. 
 	
 	
- 	
- 	\section{Conclusion}
- 	In this paper, a steady state model of the continuous ratio charge pump architecture is presented. The model is then verified using pspice simulations, and the results are discussed.
- 	
 \end{document}
