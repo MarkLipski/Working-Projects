@@ -1,0 +1,222 @@
+* C:\Users\Mark\Documents\Working-Projects\ContinuousRatio\LTspice\contRatioTB.asc
+XX1 out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] out[11] out[12] out[13] out[14] out[15] out[16] out[17] out[18] out[19] out[20] out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29] out[30] out[31] out[32] out[33] out[34] out[35] out[36] VOut 0 VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VIN VOut VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[1] VTP[2] VTP[3] VTP[4] VTP[5] VTP[6] VTP[7] VTP[8] VTP[9] vdd corex9 params: RSW={RSW}
+XX2 N001 N002 vdd out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] out[11] out[12] out[13] out[14] out[15] out[16] out[17] out[18] out[19] out[20] out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29] out[30] out[31] out[32] out[33] out[34] out[35] out[36] clkgen
+XX3 out[10] out[11] out[12] out[13] out[14] out[15] out[16] out[17] out[18] out[19] out[20] out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29] out[30] out[31] out[32] out[33] out[34] out[35] out[36] out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] VOut 0 VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VIN VOut VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[19] VTP[20] VTP[21] VTP[22] VTP[23] VTP[24] VTP[25] VTP[26] VTP[27] vdd corex9 params: RSW={RSW}
+XX4 out[28] out[29] out[30] out[31] out[32] out[33] out[34] out[35] out[36] out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] out[11] out[12] out[13] out[14] out[15] out[16] out[17] out[18] out[19] out[20] out[21] out[22] out[23] out[24] out[25] out[26] out[27] VOut 0 VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VIN VOut VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[28] VTP[29] VTP[30] VTP[31] VTP[32] VTP[33] VTP[34] VTP[35] VTP[36] vdd corex9 params: RSW={RSW}
+XX5 out[19] out[20] out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29] out[30] out[31] out[32] out[33] out[34] out[35] out[36] out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] out[11] out[12] out[13] out[14] out[15] out[16] out[17] out[18] VOut 0 VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VIN VOut VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[10] VTP[11] VTP[12] VTP[13] VTP[14] VTP[15] VTP[16] VTP[17] VTP[18] vdd corex9 params: RSW={RSW}
+V1 VOut 0 1
+V2 N001 0 PULSE(0 1 0 1p 1p 2n 4n)
+V3 N002 0 PULSE(0 1 2n 1p 1p 3n 10n 1)
+V4 VIN 0 2.5
+V5 vdd 0 1
+
+* block symbol definitions
+.subckt corex9 clk[1] clk[2] clk[3] clk[4] clk[5] clk[6] clk[7] clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[1] VTP[2] VTP[3] VTP[4] VTP[5] VTP[6] VTP[7] VTP[8] VTP[9] vdd
+XX4 SWB[1] SWB[2] SWB[3] SWB[4] SWB[5] SWB[6] SWB[7] SWB[8] SWT[1] SWT[2] SWT[3] SWT[4] SWT[5] SWT[6] SWT[7] SWT[8] N001 N007 N013 N019 VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[1] contratiocore params: RSW={RSW}
+XX7 clk[1] clk[2] clk[3] clk[4] clk[5] clk[6] clk[7] clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] vdd N001 N007 SWB[1] SWB[2] SWB[3] SWB[4] SWB[5] SWB[6] SWB[7] SWB[8] N013 N019 SWT[1] SWT[2] SWT[3] SWT[4] SWT[5] SWT[6] SWT[7] SWT[8] contratiocont
+XX1 SWB1[1] SWB1[2] SWB1[3] SWB1[4] SWB1[5] SWB1[6] SWB1[7] SWB1[8] SWT1[1] SWT1[2] SWT1[3] SWT1[4] SWT1[5] SWT1[6] SWT1[7] SWT1[8] N002 N008 N014 N020 VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[2] contratiocore params: RSW={RSW}
+XX2 clk[2] clk[3] clk[4] clk[5] clk[6] clk[7] clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] clk[1] vdd N002 N008 SWB1[1] SWB1[2] SWB1[3] SWB1[4] SWB1[5] SWB1[6] SWB1[7] SWB1[8] N014 N020 SWT1[1] SWT1[2] SWT1[3] SWT1[4] SWT1[5] SWT1[6] SWT1[7] SWT1[8] contratiocont
+XX3 SWB2[1] SWB2[2] SWB2[3] SWB2[4] SWB2[5] SWB2[6] SWB2[7] SWB2[8] SWT2[1] SWT2[2] SWT2[3] SWT2[4] SWT2[5] SWT2[6] SWT2[7] SWT2[8] N003 N009 N015 N021 VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[3] contratiocore params: RSW={RSW}
+XX5 clk[3] clk[4] clk[5] clk[6] clk[7] clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] clk[1] clk[2] vdd N003 N009 SWB2[1] SWB2[2] SWB2[3] SWB2[4] SWB2[5] SWB2[6] SWB2[7] SWB2[8] N015 N021 SWT2[1] SWT2[2] SWT2[3] SWT2[4] SWT2[5] SWT2[6] SWT2[7] SWT2[8] contratiocont
+XX8 SWB7[1] SWB7[2] SWB7[3] SWB7[4] SWB7[5] SWB7[6] SWB7[7] SWB7[8] SWT7[1] SWT7[2] SWT7[3] SWT7[4] SWT7[5] SWT7[6] SWT7[7] SWT7[8] N026 N029 N032 N035 VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[8] contratiocore params: RSW={RSW}
+XX9 clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] clk[1] clk[2] clk[3] clk[4] clk[5] clk[6] clk[7] vdd N026 N029 SWB7[1] SWB7[2] SWB7[3] SWB7[4] SWB7[5] SWB7[6] SWB7[7] SWB7[8] N032 N035 SWT7[1] SWT7[2] SWT7[3] SWT7[4] SWT7[5] SWT7[6] SWT7[7] SWT7[8] contratiocont
+XX10 SWB6[1] SWB6[2] SWB6[3] SWB6[4] SWB6[5] SWB6[6] SWB6[7] SWB6[8] SWT6[1] SWT6[2] SWT6[3] SWT6[4] SWT6[5] SWT6[6] SWT6[7] SWT6[8] N025 N028 N031 N034 VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[7] contratiocore params: RSW={RSW}
+XX11 clk[7] clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] clk[1] clk[2] clk[3] clk[4] clk[5] clk[6] vdd N025 N028 SWB6[1] SWB6[2] SWB6[3] SWB6[4] SWB6[5] SWB6[6] SWB6[7] SWB6[8] N031 N034 SWT6[1] SWT6[2] SWT6[3] SWT6[4] SWT6[5] SWT6[6] SWT6[7] SWT6[8] contratiocont
+XX6 SWB8[1] SWB8[2] SWB8[3] SWB8[4] SWB8[5] SWB8[6] SWB8[7] SWB8[8] SWT8[1] SWT8[2] SWT8[3] SWT8[4] SWT8[5] SWT8[6] SWT8[7] SWT8[8] N027 N030 N033 N036 VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[9] contratiocore params: RSW={RSW}
+XX12 clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] clk[1] clk[2] clk[3] clk[4] clk[5] clk[6] clk[7] clk[8] vdd N027 N030 SWB8[1] SWB8[2] SWB8[3] SWB8[4] SWB8[5] SWB8[6] SWB8[7] SWB8[8] N033 N036 SWT8[1] SWT8[2] SWT8[3] SWT8[4] SWT8[5] SWT8[6] SWT8[7] SWT8[8] contratiocont
+XX13 SWB4[1] SWB4[2] SWB4[3] SWB4[4] SWB4[5] SWB4[6] SWB4[7] SWB4[8] SWT4[1] SWT4[2] SWT4[3] SWT4[4] SWT4[5] SWT4[6] SWT4[7] SWT4[8] N005 N011 N017 N023 VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[5] contratiocore params: RSW={RSW}
+XX14 clk[5] clk[6] clk[7] clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] clk[1] clk[2] clk[3] clk[4] vdd N005 N011 SWB4[1] SWB4[2] SWB4[3] SWB4[4] SWB4[5] SWB4[6] SWB4[7] SWB4[8] N017 N023 SWT4[1] SWT4[2] SWT4[3] SWT4[4] SWT4[5] SWT4[6] SWT4[7] SWT4[8] contratiocont
+XX15 SWB3[1] SWB3[2] SWB3[3] SWB3[4] SWB3[5] SWB3[6] SWB3[7] SWB3[8] SWT3[1] SWT3[2] SWT3[3] SWT3[4] SWT3[5] SWT3[6] SWT3[7] SWT3[8] N004 N010 N016 N022 VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[4] contratiocore params: RSW={RSW}
+XX16 clk[4] clk[5] clk[6] clk[7] clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] clk[1] clk[2] clk[3] vdd N004 N010 SWB3[1] SWB3[2] SWB3[3] SWB3[4] SWB3[5] SWB3[6] SWB3[7] SWB3[8] N016 N022 SWT3[1] SWT3[2] SWT3[3] SWT3[4] SWT3[5] SWT3[6] SWT3[7] SWT3[8] contratiocont
+XX17 SWB5[1] SWB5[2] SWB5[3] SWB5[4] SWB5[5] SWB5[6] SWB5[7] SWB5[8] SWT5[1] SWT5[2] SWT5[3] SWT5[4] SWT5[5] SWT5[6] SWT5[7] SWT5[8] N006 N012 N018 N024 VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP[6] contratiocore params: RSW={RSW}
+XX18 clk[6] clk[7] clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] clk[1] clk[2] clk[3] clk[4] clk[5] vdd N006 N012 SWB5[1] SWB5[2] SWB5[3] SWB5[4] SWB5[5] SWB5[6] SWB5[7] SWB5[8] N018 N024 SWT5[1] SWT5[2] SWT5[3] SWT5[4] SWT5[5] SWT5[6] SWT5[7] SWT5[8] contratiocont
+.param RSW=0.1
+.ends corex9
+
+.subckt clkgen clk reset vdd out[1] out[2] out[3] out[4] out[5] out[6] out[7] out[8] out[9] out[10] out[11] out[12] out[13] out[14] out[15] out[16] out[17] out[18] out[19] out[20] out[21] out[22] out[23] out[24] out[25] out[26] out[27] out[28] out[29] out[30] out[31] out[32] out[33] out[34] out[35] out[36]
+A1 N001 0 clk 0 0 0 out[1] 0 DFLOP TRise 10p
+XX1 reset- out[1] N002 vdd and2
+XX2 reset- out[2] N003 vdd and2
+XX3 reset- out[3] N004 vdd and2
+XX4 reset- out[4] N005 vdd and2
+XX5 reset- out[5] N006 vdd and2
+XX6 reset- out[6] N007 vdd and2
+XX7 reset- out[7] N008 vdd and2
+XX8 reset- out[8] N009 vdd and2
+XX9 reset- out[10] N011 vdd and2
+XX10 reset- out[11] N012 vdd and2
+XX11 reset- out[12] N013 vdd and2
+XX12 reset- out[13] N014 vdd and2
+XX13 reset- out[14] N015 vdd and2
+XX14 reset- out[15] N016 vdd and2
+XX15 reset- out[16] N017 vdd and2
+XX16 reset- out[17] N018 vdd and2
+XX17 reset- out[9] N010 vdd and2
+XX18 reset- out[19] N020 vdd and2
+XX19 reset- out[20] N021 vdd and2
+XX20 reset- out[21] N022 vdd and2
+XX21 reset- out[22] N023 vdd and2
+XX22 reset- out[23] N024 vdd and2
+XX23 reset- out[24] N025 vdd and2
+XX24 reset- out[25] N026 vdd and2
+XX25 reset- out[26] N027 vdd and2
+XX26 reset- out[18] N019 vdd and2
+XX27 reset- out[28] N029 vdd and2
+XX28 reset- out[29] N030 vdd and2
+XX29 reset- out[30] N031 vdd and2
+XX30 reset- out[31] N032 vdd and2
+XX31 reset- out[32] N033 vdd and2
+XX32 reset- out[33] N034 vdd and2
+XX33 reset- out[34] N035 vdd and2
+XX34 reset- out[35] N036 vdd and2
+XX35 reset- out[27] N028 vdd and2
+XX36 reset out[36] N001 vdd or2
+A37 reset vdd vdd vdd vdd reset- vdd vdd BUF
+A35 N036 0 clk 0 0 0 out[36] 0 DFLOP TRise 10p
+A2 N002 0 clk 0 0 0 out[2] 0 DFLOP TRise 10p
+A3 N003 0 clk 0 0 0 out[3] 0 DFLOP TRise 10p
+A4 N004 0 clk 0 0 0 out[4] 0 DFLOP TRise 10p
+A5 N005 0 clk 0 0 0 out[5] 0 DFLOP TRise 10p
+A6 N006 0 clk 0 0 0 out[6] 0 DFLOP TRise 10p
+A7 N007 0 clk 0 0 0 out[7] 0 DFLOP TRise 10p
+A8 N008 0 clk 0 0 0 out[8] 0 DFLOP TRise 10p
+A9 N009 0 clk 0 0 0 out[9] 0 DFLOP TRise 10p
+A10 N010 0 clk 0 0 0 out[10] 0 DFLOP TRise 10p
+A11 N011 0 clk 0 0 0 out[11] 0 DFLOP TRise 10p
+A12 N012 0 clk 0 0 0 out[12] 0 DFLOP TRise 10p
+A13 N013 0 clk 0 0 0 out[13] 0 DFLOP TRise 10p
+A14 N014 0 clk 0 0 0 out[14] 0 DFLOP TRise 10p
+A15 N015 0 clk 0 0 0 out[15] 0 DFLOP TRise 10p
+A16 N016 0 clk 0 0 0 out[16] 0 DFLOP TRise 10p
+A17 N017 0 clk 0 0 0 out[17] 0 DFLOP TRise 10p
+A18 N018 0 clk 0 0 0 out[18] 0 DFLOP TRise 10p
+A19 N019 0 clk 0 0 0 out[19] 0 DFLOP TRise 10p
+A20 N020 0 clk 0 0 0 out[20] 0 DFLOP TRise 10p
+A21 N021 0 clk 0 0 0 out[21] 0 DFLOP TRise 10p
+A22 N022 0 clk 0 0 0 out[22] 0 DFLOP TRise 10p
+A23 N023 0 clk 0 0 0 out[23] 0 DFLOP TRise 10p
+A24 N024 0 clk 0 0 0 out[24] 0 DFLOP TRise 10p
+A25 N025 0 clk 0 0 0 out[25] 0 DFLOP TRise 10p
+A26 N026 0 clk 0 0 0 out[26] 0 DFLOP TRise 10p
+A27 N027 0 clk 0 0 0 out[27] 0 DFLOP TRise 10p
+A28 N028 0 clk 0 0 0 out[28] 0 DFLOP TRise 10p
+A29 N029 0 clk 0 0 0 out[29] 0 DFLOP TRise 10p
+A30 N030 0 clk 0 0 0 out[30] 0 DFLOP TRise 10p
+A31 N031 0 clk 0 0 0 out[31] 0 DFLOP TRise 10p
+A32 N032 0 clk 0 0 0 out[32] 0 DFLOP TRise 10p
+A33 N033 0 clk 0 0 0 out[33] 0 DFLOP TRise 10p
+A34 N034 0 clk 0 0 0 out[34] 0 DFLOP TRise 10p
+A36 N035 0 clk 0 0 0 out[35] 0 DFLOP TRise 10p
+.ends clkgen
+
+.subckt contratiocore SWB[1] SWB[2] SWB[3] SWB[4] SWB[5] SWB[6] SWB[7] SWB[8] SWT[1] SWT[2] SWT[3] SWT[4] SWT[5] SWT[6] SWT[7] SWT[8] SWB+ SWB- SWT+ SWT- VB+ VB- VB[1] VB[2] VB[3] VB[4] VB[5] VB[6] VB[7] VB[8] VT+ VT- VT[1] VT[2] VT[3] VT[4] VT[5] VT[6] VT[7] VT[8] VTP
+S1 VT+ VTP SWT+ 0 SW2
+S2 VT[1] VTP SWT[1] 0 SW
+S3 VT[2] VTP SWT[2] 0 SW
+S4 VT[3] VTP SWT[3] 0 SW
+S5 VT[4] VTP SWT[4] 0 SW
+S6 VT[5] VTP SWT[5] 0 SW
+S7 VT[6] VTP SWT[6] 0 SW
+S8 VT[7] VTP SWT[7] 0 SW
+S9 VT[8] VTP SWT[8] 0 SW
+S10 VT- VTP SWT- 0 SW2
+S11 N001 VB+ SWB+ 0 SW2
+S12 N001 VB[1] SWB[1] 0 SW
+S13 N001 VB[2] SWB[2] 0 SW
+S14 N001 VB[3] SWB[3] 0 SW
+S15 N001 VB[4] SWB[4] 0 SW
+S16 N001 VB[5] SWB[5] 0 SW
+S17 N001 VB[6] SWB[6] 0 SW
+S18 N001 VB[7] SWB[7] 0 SW
+S19 N001 VB[8] SWB[8] 0 SW
+S20 N001 VB- SWB- 0 SW2
+C1 VTP N001 {CFly}
+C2 0 VTP {0.0001*CFly}
+C3 0 N001 {0.0001*CFly}
+.param CFly=1n RSW=0.1
+.model SW2 SW(Ron=0.03 Roff=1Meg Vt=.5 Vh=-0.2)
+.model SW SW(Ron={RSW} Roff=1Meg Vt=.5 Vh=-0.2)
+.ends contratiocore
+
+.subckt contratiocont clk[1] clk[2] clk[3] clk[4] clk[5] clk[6] clk[7] clk[8] clk[9] clk[10] clk[11] clk[12] clk[13] clk[14] clk[15] clk[16] clk[17] clk[18] clk[19] clk[20] clk[21] clk[22] clk[23] clk[24] clk[25] clk[26] clk[27] clk[28] clk[29] clk[30] clk[31] clk[32] clk[33] clk[34] clk[35] clk[36] VDD SWB+ SWB- SWB[1] SWB[2] SWB[3] SWB[4] SWB[5] SWB[6] SWB[7] SWB[8] SWT+ SWT- SWT[1] SWT[2] SWT[3] SWT[4] SWT[5] SWT[6] SWT[7] SWT[8]
+XX1 clk[1] clk[26] SWT[8] VDD or2
+XX3 clk[3] clk[24] SWT[6] VDD or2
+XX2 clk[2] clk[25] SWT[7] VDD or2
+XX4 clk[4] clk[23] SWT[5] VDD or2
+XX5 clk[5] clk[22] SWT[4] VDD or2
+XX6 clk[6] clk[21] SWT[3] VDD or2
+XX7 clk[7] clk[20] SWT[2] VDD or2
+XX8 clk[8] clk[19] SWT[1] VDD or2
+XX9 clk[10] clk[35] SWB[1] VDD or2
+XX10 clk[12] clk[33] SWB[3] VDD or2
+XX11 clk[11] clk[34] SWB[2] VDD or2
+XX12 clk[13] clk[32] SWB[4] VDD or2
+XX13 clk[14] clk[31] SWB[5] VDD or2
+XX14 clk[15] clk[30] SWB[6] VDD or2
+XX15 clk[16] clk[29] SWB[7] VDD or2
+XX16 clk[17] clk[28] SWB[8] VDD or2
+XX17 clk[3] clk[4] N006 VDD or2
+XX18 clk[1] clk[2] N002 VDD or2
+XX19 clk[7] clk[8] N016 VDD or2
+XX20 clk[5] clk[6] N013 VDD or2
+XX21 N009 N014 SWB+ VDD or2
+XX22 N013 N016 N012 VDD or2
+XX23 N002 N006 N005 VDD or2
+XX24 N005 N012 N009 VDD or2
+XX25 clk[12] clk[13] N022 VDD or2
+XX26 clk[10] clk[11] N018 VDD or2
+XX27 clk[16] clk[17] N032 VDD or2
+XX28 clk[14] clk[15] N029 VDD or2
+XX29 N024 N030 SWT+ VDD or2
+XX30 N029 N032 N026 VDD or2
+XX31 N018 N022 N020 VDD or2
+XX32 N020 N026 N024 VDD or2
+XX33 clk[30] clk[31] N021 VDD or2
+XX34 clk[28] clk[29] N017 VDD or2
+XX35 clk[34] clk[35] N031 VDD or2
+XX36 clk[32] clk[33] N027 VDD or2
+XX37 N023 N028 SWT- VDD or2
+XX38 N027 N031 N025 VDD or2
+XX39 N017 N021 N019 VDD or2
+XX40 N019 N025 N023 VDD or2
+XX41 clk[21] clk[22] N004 VDD or2
+XX42 clk[19] clk[20] N001 VDD or2
+XX43 clk[25] clk[26] N015 VDD or2
+XX44 clk[23] clk[24] N010 VDD or2
+XX45 N007 N011 SWB- VDD or2
+XX46 N010 N015 N008 VDD or2
+XX47 N001 N004 N003 VDD or2
+XX48 N003 N008 N007 VDD or2
+XX49 clk[18] clk[27] N011 VDD or2
+XX50 clk[18] clk[9] N030 VDD or2
+XX51 clk[27] clk[36] N028 VDD or2
+XX52 clk[9] clk[36] N014 VDD or2
+C1 SWT- 0 20f
+C2 SWT+ 0 20f
+C3 SWB+ 0 20f
+C4 SWB- 0 20f
+.ends contratiocont
+
+.subckt and2 in1 in2 out VDD
+S1 0 out cont in1 SW
+S2 0 out cont in2 SW
+S3 out N001 in1 cont SW
+S4 N001 VDD in2 cont SW
+B1 cont 0 V=0.5*V(VDD)
+.model SW SW(Ron=10 Roff=1Meg Vt=.05 Vh=-0.01)
+.ends and2
+
+.subckt or2 in1 in2 out VDD
+S1 VDD out in1 vref SW
+S2 VDD out in2 vref SW
+S3 out N001 vref in1 SW
+S4 N001 0 vref in2 SW
+B1 vref 0 V=0.5*V(VDD)
+C1 out 0 3f
+.model SW SW(Ron=2 Roff=1Meg Vt=.04 Vh=-0.01)
+.ends or2
+
+.tran 0 350n 0 15p
+.param RSW = 4
+.backanno
+.end
