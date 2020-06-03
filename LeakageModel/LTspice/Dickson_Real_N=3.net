@@ -3,12 +3,12 @@ V1 In 0 {VIn}
 V2 Out 0 {VOut}
 V3 clk1 0 PULSE(0 1 {0.5*T_SW} 1p 1p {0.5*T_SW} {T_SW})
 V4 clk2 0 PULSE(0 1 0 1p 1p {0.5*T_SW} {T_SW})
-XX1 0 In clk1 In N001 NC_01 NC_02 sccore params: RSW=1, T = 0.01, B=0.01
-XX2 0 In clk2 In N001 NC_03 NC_04 sccore params: RSW=1, T = 0.01, B=0.01
-XX3 0 In clk2 N001 N002 NC_05 NC_06 sccore params: RSW=1, T = 0.01, B=0.01
-XX4 0 In clk1 N001 N002 NC_07 NC_08 sccore params: RSW=1, T = 0.01, B=0.01
-XX5 0 In clk1 N002 Out NC_09 NC_10 sccore params: RSW=1, T = 0.01, B=0.01
-XX6 0 In clk2 N002 Out NC_11 NC_12 sccore params: RSW=1, T = 0.01, B=0.01
+XX1 0 In clk1 In N001 NC_01 NC_02 sccore params: RSW=1, T = {B}, B={B}
+XX2 0 In clk2 In N001 NC_03 NC_04 sccore params: RSW=1, T = {B}, B={B}
+XX3 0 In clk2 N001 N002 NC_05 NC_06 sccore params: RSW=1, T = {B}, B={B}
+XX4 0 In clk1 N001 N002 NC_07 NC_08 sccore params: RSW=1, T = {B}, B={B}
+XX5 0 In clk1 N002 Out NC_09 NC_10 sccore params: RSW=1, T = {B}, B={B}
+XX6 0 In clk2 N002 Out NC_11 NC_12 sccore params: RSW=1, T = {B}, B={B}
 
 * block symbol definitions
 .subckt sccore B1 B2 clk1 T1 T2 VTP VBP
@@ -25,7 +25,8 @@ B1 clk2 0 V=1-V(clk1)
 .ends sccore
 
 .param VIn=1 VOut=3.5 T_SW={1/f}
-.param  f 50Meg
+.param  f 25Meg
 .tran 0 400n 380n 1p
+.param B = 0.05
 .backanno
 .end

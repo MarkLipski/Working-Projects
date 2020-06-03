@@ -14,20 +14,20 @@ Ignoring empty pin current: Ix(x4:clk1)
 Ignoring empty pin current: Ix(x5:clk1)
 Ignoring empty pin current: Ix(x6:clk1)
 
-Date: Tue Jun 02 22:28:06 2020
-Total elapsed time: 6.875 seconds.
+Date: Wed Jun 03 01:15:44 2020
+Total elapsed time: 6.593 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 808767
-traniter = 808763
-tranpoints = 401970
-accept = 401489
-rejected = 481
+totiter = 804091
+traniter = 804087
+tranpoints = 400916
+accept = 400692
+rejected = 224
 matrix size = 34
 fillins = 2
 solver = Normal
-Matrix Compiler1: 1.24 KB object code size  1.7/0.7/[0.4]
-Matrix Compiler2: 3.12 KB object code size  1.0/1.4/[0.7]
+Matrix Compiler1: 1.24 KB object code size  0.7/0.3/[0.2]
+Matrix Compiler2: 3.12 KB object code size  0.5/0.7/[0.3]
 
