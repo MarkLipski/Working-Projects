@@ -9,7 +9,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="SCCell.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   inkscape:version="0.92.5 (0.92.5+68)"
    id="svg3931"
    version="1.1"
    viewBox="0 0 210 297"
@@ -130,18 +130,18 @@
   </defs>
   <sodipodi:namedview
      inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="-8"
-     inkscape:window-height="1018"
-     inkscape:window-width="1920"
+     inkscape:window-y="27"
+     inkscape:window-x="67"
+     inkscape:window-height="713"
+     inkscape:window-width="1299"
      inkscape:snap-object-midpoints="true"
      showgrid="true"
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="443.87226"
-     inkscape:cx="212.20819"
-     inkscape:zoom="3.959798"
+     inkscape:cy="661.03669"
+     inkscape:cx="287.51529"
+     inkscape:zoom="2.8"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -177,14 +177,6 @@
        id="use4363"
        xlink:href="#use265" />
     <use
-       transform="rotate(180,52.255208,57.546875)"
-       height="100%"
-       width="100%"
-       y="0"
-       x="0"
-       id="use4422"
-       xlink:href="#Ground" />
-    <use
        transform="translate(43.656249,105.83333)"
        height="100%"
        width="100%"
@@ -200,14 +192,6 @@
        width="100%"
        height="100%"
        transform="translate(43.656249,116.41667)" />
-    <use
-       xlink:href="#Ground"
-       id="use4422-1"
-       x="0"
-       y="0"
-       width="100%"
-       height="100%"
-       transform="translate(14.552083,128.32292)" />
     <use
        transform="rotate(-90,104.51042,47.625)"
        height="100%"
@@ -445,5 +429,39 @@
        cx="59.53125"
        id="path4736-6-7"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.52778;stroke-linecap:round" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 58.208333,107.02917 h 2.645833"
+       id="path16012"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 58.737499,106.5 h 1.5875"
+       id="path16014"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 59.266666,105.97083 h 0.529167"
+       id="path16016"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g16042"
+       transform="rotate(-180,59.53125,138.91146)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path16012-7"
+         d="m 58.208333,141.425 h 2.645833"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path16014-2"
+         d="m 58.737499,140.89583 h 1.5875"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path16016-2"
+         d="m 59.266666,140.36666 h 0.529167"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
   </g>
 </svg>
