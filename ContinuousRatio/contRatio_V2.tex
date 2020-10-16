@@ -11,7 +11,7 @@
 \usepackage{cuted}
 
 \title{A Steady State Model for the Continuous Conversion Ratio Charge Pump}
-
+\author{Mark Lipski}
 \begin{document}
 	\maketitle
 	\section{Abstract}
@@ -25,11 +25,11 @@
 	
 	The structure of the paper is as follows, first, a model of the charge pump will be generated. Next, the results of the model are compared to simulations performed using pspice. The results are then discussed, along with the validity of the assumptions.
 	\section{Steady State Model}
-	The circuit to be analyzed is the continuous conversion ratio circuit as seen in \cite{Butzen2019}, which can be seen in Fig. \ref{fig:contTop}. 
+	The circuit to be analyzed is the continuous conversion ratio circuit proposed in \cite{Butzen2019}, seen in Fig. \ref{fig:contTop}. 
 	\subsection{Circuit Operation}
 	The continuous conversion ratio charge pump functions substantially differently from the traditional switched capacitor power converter in its operation. Conceptually, the flying capacitors are charged by connecting the top plate to $V_{IN}$, then discharge by connecting to $V_{OUT}$, delivering current to the output.
 	
-	This process is made efficient using adiabatic charging methods similar to those in \cite{svensson1994}, \cite{Butzen2016}, in which capacitors are gradually charged and discharged. The charging occurs overs numerous steps, where the top plate connects to intermediary voltages between $V_{OUT}$ and $V_{IN}$, labeled as ($T_1$ $\rightarrow$ $T_M$), with $M$ indicating the number of intermediary levels. The bottom plate intermediary nodes are labeled $B_1$ to $B_N$.
+	This process is made efficient using adiabatic charging methods similar to those in \cite{svensson1994}, \cite{Butzen2016}, in which capacitors are gradually charged and discharged. The charging occurs over numerous steps, where the top plate connects to intermediary voltages between $V_{OUT}$ and $V_{IN}$, labeled ($T_1$ $\rightarrow$ $T_M$), with $M$ indicating the number of intermediary levels. The bottom plate intermediary nodes are labeled $B_1$ to $B_N$.
 	
 	The various steps are numbered along with their associated capacitors in Fig. \ref{fig:contTop}, in steps (1,0 $\rightarrow$ 1,N) the bottom plate voltage is decreased, supplying nodes ($B_1 \rightarrow B_N$) with current. This current is then used to increase the bottom plate voltage over steps (3,1 $\rightarrow$ 3,N), simultaneously delivering current to the output. A similar process occurs with the top plate on steps (2,1 $\rightarrow$ 2,M) and (4,1 $\rightarrow$ 4,M) where current is drawn from the input.
 	
@@ -39,7 +39,7 @@
 		\item The top and bottom plate parasitic capacitance's have minimal impact on the transient and steady state characteristics of the converter, and are neglected from the analysis.
 		\item All the flying capacitors are equally sized with capacitance $C_{Fly}$, where $C_{Fly} = C_{1,0} = C_{1,1} = C_{2,0} = C_{2,M} ...$
 		\item The input and output voltages $V_{IN}$, and $V_{OUT}$ are constant and ideal.
-		\item The switches for the intermediary nodes, $S_{T1}, S_{T2}, S_{TM}, S_{B1}, S_{BN}, etc$, all have an equivalent resistance $R_{ON}$. The resistance of the switches which connect to the positive and negative rails ($S_{T+}, S_{T-}, S_{B+}, S_{B-}$) is 0$\Omega$ .
+		\item The switches for the intermediary nodes, $S_{T1}, S_{T2}$, $S_{TM}, S_{B1}, S_{BN}, etc$, all have an equivalent resistance $R_{ON}$. The resistance of the switches which connect to the positive and negative rails ($S_{T+}, S_{T-}, S_{B+}, S_{B-}$) is 0$\,\Omega$.
 	\end{itemize}
 	\begin{figure}
 		\centering
@@ -54,7 +54,7 @@
 		\label{fig:coreCon}
 	\end{figure}
 	\subsection{Charge Transfer Analysis}
-	The operation of the converter is as follows, each capacitor iterates from steps (1,0)$\rightarrow$(4,M) sequentially. There is always a connection on the top or bottom plate to either 0$\,$V, $V_{IN}$ or $V_{OUT}$. The other connection to the intermediary voltage domains (those being $B_1 \rightarrow B_N$ and $T_1 \rightarrow T_M$) occurs through a switch with a resistance $R_{ON}$, where the core voltage begins to equalize with the new voltage domain. An example circuit can be seen in Fig. \ref{fig:step_Circ1}, which is electrically equivalent to Fig. \ref{fig:step_Circ2}. 
+	The operation of the converter involves each capacitor iterating from steps (1,0)$\rightarrow$(4,M) sequentially. There is always a connection on the top or bottom plate to either 0$\,$V, $V_{IN}$ or $V_{OUT}$. Connections to the intermediary voltage domains (those being $B_1 \rightarrow B_N$ and $T_1 \rightarrow T_M$) occur through a switch with a resistance $R_{ON}$. An example circuit can be seen in Fig. \ref{fig:step_Circ1}, which is electrically equivalent to Fig. \ref{fig:step_Circ2}. 
 	
 	\begin{figure}
 		\centering
@@ -81,7 +81,7 @@
 		\label{fig:V-(t)}
 	\end{figure}
 	
-	The circuit diagram in Fig. \ref{fig:step_Circ2}, can be used to calculate the transient response of the circuit over each time step. Consider node ($B_N$),  the impedance of both branches to IN and OUT is identical, this symmetry results in $B_N$ being constant over a single time step. The top and bottom plate voltages of the capacitors can then be described using a single $RC$ time constant ($\tau$), where $\tau = R_{ON}C_{Fly}$. Using Fig. \ref{fig:step_Circ2} as an example, the top plate voltage of $C_{1,1}$ is known, while the bottom plate voltage ($V_{-}^{1,1}$) can be calculated as,
+	The circuit diagram in Fig. \ref{fig:step_Circ2} can be used to calculate the transient response of the circuit over each time step. Consider node $B_N$, the impedance of the branches to IN and OUT are identical, this symmetry results in $B_N$ being constant over a single time step. The top and bottom plate voltages of the capacitors can then be described using a single $RC$ time constant ($\tau$), where $\tau = R_{ON}C_{Fly}$. Using Fig. \ref{fig:step_Circ2} as an example, the top plate voltage of $C_{1,1}$ is known, while the bottom plate voltage ($V_{-}^{1,1}$) can be calculated as,
 	\begin{equation}
 	V_{-}^{1,1}(t) = V_{OUT}\exp\left(\frac{-t}{\tau}\right) + V_{BN}\left(1-\exp\left(\frac{-t}{\tau}\right)\right),
 	\end{equation}
@@ -95,7 +95,7 @@
 	A = 1-\exp\left(\tfrac{-1}{\tau f_{SW}}\right),
 	\label{eq:A}
 	\end{equation}
-	which can be substituted into (\ref{eq:Vstepn}) for example
+	which can be substituted into (\ref{eq:Vstepn}) resulting in
 	\begin{equation}
 		V_{C}[n] = V_C[n-1](1-A) + AV_{int}.
 	\end{equation}
@@ -120,7 +120,7 @@
 	V_-^{1,N}
 	\end{bmatrix}
 	&\!=\!
-	M\!\begin{bmatrix}
+	H\!\begin{bmatrix}
 	V_{BN} \\
 	V_{BN-1} \\
 	\vdots \\
@@ -136,11 +136,11 @@
 	\end{split}
 	\label{eq:V_1}
 	\end{equation}
-	where $M$ is,
+	where,
 	
 	\begin{equation}
 	\begin{split}
-	M
+	H
 	&\!=\!
 	\arraycolsep2pt 
 	\begin{bmatrix}
@@ -149,7 +149,7 @@
 	\vdots & \vdots & \ddots & \vdots & \vdots \\
 	A(1\!-\!A)^{N-2} \!& A(1\!-\!A)^{N-3} \!& \dots & A & 0\\ 
 	A(1\!-\!A)^{N-1} \!& A(1\!-\!A)^{N-2} \!& \dots & A(1-A) & A 
-	\end{bmatrix}.
+	\end{bmatrix}.\!
 	\end{split}
 	\label{eq:M}
 	\end{equation}
@@ -164,7 +164,7 @@
 		V_-^{3,1}
 		\end{bmatrix}
 		&\!=\!
-		M^T\!\begin{bmatrix}
+		H^T\!\begin{bmatrix}
 		V_{BN} \\
 		V_{BN-1} \\
 		\vdots \\
@@ -175,11 +175,12 @@
 		\label{eq:V_3}
 		\end{equation}
 	
-	Next, a charge balance analysis can be used to calculate the current moving into and out of nodes $B_1 \rightarrow B_N$ on each time step. In both cases, the charge into the node can be calculated using the change in voltage on the capacitor,
+	To calculate the values of $V_{B1}\rightarrow V_{BN}$, the amount of charge delivered to these nodes on each time step must be known. For steps, (1,1)$\rightarrow $(1,N), the charge delivered to $Bx$ is,
 	\begin{equation}
 	Q_{Bx} = C_{Fly}(V_-^{1,x} - V_-^{1,x-1}),
+	\label{eq:Q_Bx}
 	\end{equation}
-	where $x$ is the index from 1 to $N$. This can be used to construct matrices for both steps $(1,1)\rightarrow(1,N)$
+	where $x$ ranges from 1 to $N$. A matrix for the charge delivered on steps $(1,1)\rightarrow(1,N)$ can then be constructed using (\ref{eq:V_1}) and (\ref{eq:Q_Bx})
 	\begin{equation}
 	\begin{bmatrix}
 	Q_{BN} \\
@@ -195,16 +196,16 @@
 	\vdots \\
 	V_{B2} \\
 	V_{B1}
-	\end{bmatrix}\!+ CV_{DD}\!\begin{bmatrix}
+	\end{bmatrix}\!+ \!CV_{DD}\!\begin{bmatrix}
 	A \\
 	A(1-A) \\
 	\vdots \\
 	A(1\!-\!A)^{N-2} \\
 	A(1\!-\!A)^{N-1}
-	\end{bmatrix}
+	\end{bmatrix},
 	\label{eq:Q_V1}
 	\end{equation}	
-	
+	where
 	\begin{equation}
 	G\!=\!	
 	\arraycolsep3pt 
@@ -214,11 +215,10 @@
 	\vdots & \vdots & \ddots & \vdots & \vdots \\
 	A^2(1\!-\!A)^{N-3} \!& A^2(1\!-\!A)^{N-4} \!& \dots & -A & 0\\ 
 	A^2(1\!-\!A)^{N-2} \!& A^2(1\!-\!A)^{N-3} \!& \dots & A^2 & -A 
-	\end{bmatrix}
-	\vspace{1pt}
+	\end{bmatrix}.
 	\end{equation}
 	
-	and $(3,1)\rightarrow(3,N)$ 
+	Using a similar procedure, the charge delivered on steps $(3,1)\rightarrow(3,N)$ is,
 	\begin{equation}
 	\begin{bmatrix}
 	Q_{BN} \\
@@ -235,33 +235,61 @@
 	\vdots \\
 	V_{B2} \\
 	V_{B1}
-	\end{bmatrix}
+	\end{bmatrix}.
 	\label{eq:Q_V3}
 	\end{equation}
-	as in (\ref{eq:Q_V1}) and (\ref{eq:Q_V3}) respectively.
-	The charge out of the nodes can then be added, and summed to zero, as the voltage at the nodes does not change at steady state. The solved expression for voltage levels $V_{B1} \rightarrow V_{BN}$ is,
+	The steady state condition occurs when the net charge into the intermediary nodes is 0. This can be acquired by adding (\ref{eq:Q_V1}) and (\ref{eq:Q_V3}), then equating to zero,
+	
 	\begin{equation}
-	V_{Bx} = V_{OUT}\frac{A(x-1) + 1}{A(N-1) + 2},
+		\begin{bmatrix}
+			0 \\
+			0 \\
+			\vdots\\
+			0 \\ 
+			0
+		\end{bmatrix}\!
+		=
+		\!(G\!+\!G^T)\!
+		\begin{bmatrix}
+			V_{BN} \\
+			V_{BN-1} \\
+			\vdots \\
+			V_{B2} \\
+			V_{B1}
+		\end{bmatrix}\!
+		+ \!V_{DD}\!\begin{bmatrix}
+		A \\
+		A(1-A) \\
+		\vdots \\
+		A(1\!-\!A)^{N-2} \\
+		A(1\!-\!A)^{N-1}
+	\end{bmatrix},	
 	\end{equation}
-	a similar procedure can be followed to acquire the voltage levels for $V_{T1} \rightarrow V_{TM}$,
+	
+	solving this expression for $V_{B1} \rightarrow V_{BN}$ yields,
 	\begin{equation}
-	V_{Tx} = V_{OUT} + (V_{IN} - V_{OUT})\frac{A(x-1) + 1}{A(M-1) + 2}\,.
+	V_{Bx} = V_{OUT}\frac{A(x-1) + 1}{A(N-1) + 2}.
 	\end{equation}
+	A similar procedure can be followed to acquire the voltage levels for $V_{T1} \rightarrow V_{TM}$,
+	\begin{equation}
+	V_{Ty} = V_{OUT} + (V_{IN} - V_{OUT})\frac{A(y-1) + 1}{A(M-1) + 2}\,,
+	\end{equation}
+	where y ranges from 1 to $M$.
 	These can now be substituted into (\ref{eq:V_1}) for example to acquire the solved expressions for $V_-$ for steps (1,1) $\rightarrow$ (1,N).
 	The solved expressions for the top and bottom plate voltages are:
 	\begin{equation}
 	V_{-}^{1,x} = \frac{((N-x-1)A + 2)V_{OUT}}{A(N-1) + 2},
 	\end{equation}
 	\begin{equation}
-	V_{+}^{2,x} = V_{OUT} + (V_{IN} -V_{OUT})\tfrac{(M-x-1)A + 2}{A(M-1) + 2},
+	V_{+}^{2,y} = V_{OUT} + (V_{IN} -V_{OUT})\tfrac{(M-y-1)A + 2}{A(M-1) + 2},
 	\end{equation}
 	\begin{equation}
 	V_{-}^{3,x} = \frac{xAV_{OUT}}{A(N-1) + 2},
 	\end{equation}
 	\begin{equation}
-	V_{+}^{4,x} = V_{OUT} + \tfrac{xA(V_{IN} -V_{OUT})}{A(M-1) + 2}.
+	V_{+}^{4,y} = V_{OUT} + \tfrac{yA(V_{IN} -V_{OUT})}{A(M-1) + 2}.
 	\end{equation}
-	In order to calculate the input and output currents of the converter, a charge balance method will be used. The charge delivered to the output can be observed from Fig. \ref{fig:contTop}, where it occurs on steps (1,0), (3,0)$\rightarrow$(3,N) and (4,1)$\rightarrow$(4,M). The charge transferred on the steps is as follows,
+	The charge delivered to the output can be observed from Fig. \ref{fig:contTop}, where it occurs on steps (1,0), (3,0)$\rightarrow$(3,N) and (4,1)$\rightarrow$(4,M). The charge transferred on the steps is as follows,
 	\begin{equation}
 	Q_{3,0} = C_{Fly}(V_+^{2,M} - V_{OUT}),
 	\end{equation}
@@ -284,7 +312,7 @@
  	\begin{split}
  	Q_{IN} &= C_{Fly}\left(V_{IN} - V_+^{4,M} + V_{OUT}\right) \\
  	Q_{IN} &= C_{Fly}\!\left(V_{IN} - V_{OUT} - \tfrac{MA(V_{IN}\! -\!V_{OUT})}{A(M-1) + 2} + V_{OUT}\!\right) \\
- 	Q_{IN} &= C_{Fly}\tfrac{MAV_{OUT} + (2-A)V_{IN}}{A(M-1) + 2}
+ 	Q_{IN} &= C_{Fly}\tfrac{MAV_{OUT} + (2-A)V_{IN}}{A(M-1) + 2}.
  	\end{split}
  	\end{equation}
  	The input and output charge can then be used in combination with the switching frequency to acquire the input and output power,
@@ -305,11 +333,11 @@
  	\begin{figure}
  		\centering
  		\includegraphics[width=\linewidth]{Figures/eta_A.pdf}
- 		\caption{Comparison between calculated and simulated data for various values of A and $V_{IN}$.}
+ 		\caption{Comparison between calculated and simulated efficiency results for various values of A and $V_{IN}$.}
  		\label{fig:Comp_A}
  	\end{figure}
  	\subsection{Incorporating Transistor Switching Losses}
- 	The power lost switching the gates of the transistors on and off can either be added to $P_{IN}$, or subtracted from $P_{OUT}$, depending on the bootstrapping and control method used. The power can be calculated using $f_{SW}$, along with the total gate capacitance of all the switches ($C_{G}$), and the switching voltage $V_{SW}$,
+ 	The power lost switching the gates of the transistors on and off can either be added to $P_{IN}$, or subtracted from $P_{OUT}$, depending on the bootstrapping and control method used. The power can be calculated using $f_{SW}$, along with the total gate capacitance of all the switches ($C_{G}$), and the switching voltage ($V_{SW}$),
  	\begin{equation}
  	P_{SW} = f_{SW}V_{SW}^2C_G.
  	\end{equation}
