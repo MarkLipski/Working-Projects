@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.29)  10 JUL 2020 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.29)  3 AUG 2020 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**contRatio_MWSCAS.tex
-(./contRatio_MWSCAS.tex
+**contRatio_V2.tex
+(./contRatio_V2.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -331,6 +331,56 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tabstackengine/tabstackengine.sty
+Package: tabstackengine 2016/11/30 (V2.01) tabbed stacking
+
+(/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count113
+)
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_nestcnt=\count114
+)
+Package: listofitems 2018/01/13 v1.52 Grab items in lists using user-specified 
+sep char (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count115
+\calc@Bcount=\count116
+\calc@Adimen=\dimen145
+\calc@Bdimen=\dimen146
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count117
+\calc@Cskip=\skip51
+)
+\c@@stackindex=\count118
+\@boxshift=\skip52
+\stack@tmplength=\skip53
+\temp@stkl=\skip54
+\@stackedboxwidth=\skip55
+\@addedbox=\box30
+\@anchorbox=\box31
+\stackedbox=\box32
+\@centerbox=\box33
+\c@ROWcellindex@=\count119
+)
+\c@TABrowindex@=\count120
+\c@TABcolindex@=\count121
+\c@TABalignmentindex@=\count122
+\TABcelltoks=\toks22
+\TABcoltoks=\toks23
+\LstrutTABtoks=\toks24
+\RstrutTABtoks=\toks25
+)
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -357,13 +407,13 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen145
-\captionmargin@=\dimen146
-\captionwidth=\dimen147
-\caption@tempdima=\dimen148
-\caption@indent=\dimen149
-\caption@parindent=\dimen150
-\caption@hangindent=\dimen151
+\captionmargin=\dimen147
+\captionmargin@=\dimen148
+\captionwidth=\dimen149
+\caption@tempdima=\dimen150
+\caption@indent=\dimen151
+\caption@parindent=\dimen152
+\caption@hangindent=\dimen153
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -383,27 +433,27 @@ ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
 ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
 \fi .
-\c@ContinuedFloat=\count113
+\c@ContinuedFloat=\count123
 )
-\c@subfigure=\count114
-\c@subtable=\count115
+\c@subfigure=\count124
+\c@subtable=\count125
 ) (/usr/share/texlive/texmf-dist/tex/latex/sttools/cuted.sty
 Package: cuted 2012/10/04 v1.5 Mixing onecolumn and twocolumn modes
-\At@ViperColsBreak=\toks22
-\v@aaa=\box30
-\v@ccc=\box31
-\lastskip@a=\skip49
-\lastskip@b=\skip50
-\lastskip@d=\skip51
-\lastbox@a=\box32
-\stripsep=\skip52
-\@viper=\box33
-\viper@penalty=\count116
-\hold@viper=\box34
-\ht@viper=\dimen152
+\At@ViperColsBreak=\toks26
+\v@aaa=\box34
+\v@ccc=\box35
+\lastskip@a=\skip56
+\lastskip@b=\skip57
+\lastskip@d=\skip58
+\lastbox@a=\box36
+\stripsep=\skip59
+\@viper=\box37
+\viper@penalty=\count126
+\hold@viper=\box38
+\ht@viper=\dimen154
 )
-(./contRatio_MWSCAS.aux)
-\openout1 = `contRatio_MWSCAS.aux'.
+(./contRatio_V2.aux)
+\openout1 = `contRatio_V2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -419,8 +469,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 15.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 15.
@@ -462,17 +511,17 @@ LaTeX Font Info:    ... okay on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count117
-\scratchdimen=\dimen153
-\scratchbox=\box35
-\nofMPsegments=\count118
-\nofMParguments=\count119
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count120
-\MPscratchDim=\dimen154
-\MPnumerator=\count121
-\makeMPintoPDFobject=\count122
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count127
+\scratchdimen=\dimen155
+\scratchbox=\box39
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen156
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -527,8 +576,17 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
 
+
+LaTeX Warning: No \author given.
+
+
+LaTeX Warning: No \author given.
+
+
+LaTeX Warning: No \author given.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -537,56 +595,64 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 4467) in paragraph at lines 30--31
+\OT1/ptm/m/n/10 tions sub-stan-tially dif-fer-ently from the tra-di-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 []\OT1/ptm/m/n/10 The switches for the in-ter-me-di-ary nodes,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 \OML/cmm/m/it/10 S[]; S[]; S[]; S[]; S[]; etc$\OT1/ptm/m/n/10 , all have an
  []
 
 <Figures/contRatioCircuit2.pdf, id=1, 386.89392pt x 210.77823pt>
 File: Figures/contRatioCircuit2.pdf Graphic file (type pdf)
 <use Figures/contRatioCircuit2.pdf>
-Package pdftex.def Info: Figures/contRatioCircuit2.pdf  used on input line 38.
+Package pdftex.def Info: Figures/contRatioCircuit2.pdf  used on input line 46.
 (pdftex.def)             Requested size: 228.8775pt x 124.68935pt.
 <Figures/contRatioCore.pdf, id=2, 222.22221pt x 169.96257pt>
 File: Figures/contRatioCore.pdf Graphic file (type pdf)
 <use Figures/contRatioCore.pdf>
-Package pdftex.def Info: Figures/contRatioCore.pdf  used on input line 44.
+Package pdftex.def Info: Figures/contRatioCore.pdf  used on input line 52.
 (pdftex.def)             Requested size: 137.3279pt x 105.03336pt.
+<Figures/step2_Circ.pdf, id=3, 112.18886pt x 101.1827pt>
+File: Figures/step2_Circ.pdf Graphic file (type pdf)
+<use Figures/step2_Circ.pdf>
+Package pdftex.def Info: Figures/step2_Circ.pdf  used on input line 63.
+(pdftex.def)             Requested size: 102.99417pt x 92.89003pt.
+<Figures/step2_Eq.pdf, id=4, 90.89252pt x 78.96326pt>
+File: Figures/step2_Eq.pdf Graphic file (type pdf)
+<use Figures/step2_Eq.pdf>
+Package pdftex.def Info: Figures/step2_Eq.pdf  used on input line 70.
+(pdftex.def)             Requested size: 102.99417pt x 89.47804pt.
+<Figures/V-(t).pdf, id=5, 270.79385pt x 119.41574pt>
+File: Figures/V-(t).pdf Graphic file (type pdf)
+<use Figures/V-(t).pdf>
+Package pdftex.def Info: Figures/V-(t).pdf  used on input line 79.
+(pdftex.def)             Requested size: 205.98834pt x 90.84071pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./Figures/contRatioCircuit2.pdf> <./Figures/contRatioCore.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/contRatioCore.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
->]
-<Figures/step2_Circ.pdf, id=31, 112.18886pt x 101.1827pt>
-File: Figures/step2_Circ.pdf Graphic file (type pdf)
-<use Figures/step2_Circ.pdf>
-Package pdftex.def Info: Figures/step2_Circ.pdf  used on input line 55.
-(pdftex.def)             Requested size: 84.55403pt x 76.2589pt.
-<Figures/step2_Eq.pdf, id=32, 90.89252pt x 78.96326pt>
-File: Figures/step2_Eq.pdf Graphic file (type pdf)
-<use Figures/step2_Eq.pdf>
-Package pdftex.def Info: Figures/step2_Eq.pdf  used on input line 61.
-(pdftex.def)             Requested size: 65.76584pt x 57.13423pt.
-<Figures/V-(t).pdf, id=33, 270.79385pt x 119.41574pt>
-File: Figures/V-(t).pdf Graphic file (type pdf)
-<use Figures/V-(t).pdf>
-Package pdftex.def Info: Figures/V-(t).pdf  used on input line 70.
-(pdftex.def)             Requested size: 205.98834pt x 90.84071pt.
-
-Overfull \hbox (2.95157pt too wide) detected at line 83
+]
+Overfull \hbox (2.95157pt too wide) detected at line 92
 \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]  =  \O
 ML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n  \OMS/cmsy/m/n/10 ^^@  \O
 T1/cmr/m/n/10 1] [] [] + \OML/cmm/m/it/10 V[]  [] ;
  []
 
-[2 <./Figures/step2_Circ.pdf> <./Figures/step2_Eq.pdf
+[2 <./Figures/contRatioCircuit2.pdf> <./Figures/contRatioCore.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/contRatioCore.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+> <./Figures/step2_Circ.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/step2_Circ.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+> <./Figures/step2_Eq.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/step2_Eq.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -595,22 +661,20 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/step2_Eq.pdf): PDF inclusion:
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/V-(t).pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >]
-Overfull \hbox (0.56375pt too wide) detected at line 282
+Overfull \hbox (0.56375pt too wide) detected at line 289
 []
  []
 
-[3]
-<Figures/eta_VIn.pdf, id=64, 346.17331pt x 205.9695pt>
-File: Figures/eta_VIn.pdf Graphic file (type pdf)
-<use Figures/eta_VIn.pdf>
-Package pdftex.def Info: Figures/eta_VIn.pdf  used on input line 302.
-(pdftex.def)             Requested size: 187.89914pt x 111.797pt.
-<Figures/eta_A.pdf, id=65, 346.17331pt x 205.9695pt>
+<Figures/eta_A.pdf, id=60, 459.6372pt x 289.08pt>
 File: Figures/eta_A.pdf Graphic file (type pdf)
 <use Figures/eta_A.pdf>
 Package pdftex.def Info: Figures/eta_A.pdf  used on input line 307.
-(pdftex.def)             Requested size: 187.89914pt x 111.797pt.
- (./contRatio_MWSCAS.bbl)
+(pdftex.def)             Requested size: 228.8775pt x 143.94856pt.
+[3] (./contRatio_V2.bbl
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -622,37 +686,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4 <./Figures/eta_VIn.pdf> <./Figures/eta_A.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/eta_A.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
->] (./contRatio_MWSCAS.aux) ) 
+[4 <./Figures/eta_A.pdf>] (./contRatio_V2.aux) ) 
 Here is how much of TeX's memory you used:
- 6039 strings out of 492982
- 92267 string characters out of 6134896
- 188059 words of memory out of 5000000
- 9505 multiletter control sequences out of 15000+600000
- 39362 words of font info for 88 fonts, out of 8000000 for 9000
+ 6787 strings out of 492982
+ 102397 string characters out of 6134896
+ 193234 words of memory out of 5000000
+ 10237 multiletter control sequences out of 15000+600000
+ 36739 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,26n,40p,637b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
-e/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on contRatio_MWSCAS.pdf (4 pages, 211213 bytes).
+ 42i,23n,40p,912b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/
+fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmri8a.pfb>
+Output written on contRatio_V2.pdf (4 pages, 181844 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 145 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

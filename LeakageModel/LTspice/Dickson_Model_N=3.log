@@ -39,12 +39,17 @@ Questionable use of curly braces in "b2 b2 bp2  v={(1-{a})*(v(b1)-v(b2)+v(t2)-v(
 Direct Newton iteration for .op point succeeded.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Date: Tue Jun 02 21:49:43 2020
 Total elapsed time: 0.161 seconds.
 =======
 Date: Mon Jun 01 19:51:18 2020
 Total elapsed time: 0.188 seconds.
 >>>>>>> c5bcdedb406eeb37dc531e07048d5f61fd1b2720
+=======
+Date: Wed Jun 03 01:18:20 2020
+Total elapsed time: 0.448 seconds.
+>>>>>>> 124c0de2922b4ba698cfbd841acf8d2f03f03802
 
 tnom = 27
 temp = 27
