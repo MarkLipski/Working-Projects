@@ -2,54 +2,44 @@ Circuit: * C:\Users\Mark\Documents\Working-Projects\LeakageModel\LTspice\Dickson
 
 Questionable use of curly braces in "b4 bp1 bp2  i={{b}*{c}*{f}*(v(bp1)-v(bp2))}"
     Error: undefined symbol in: "(b)*(c)*(f)*([v](bp1)-v(bp2))"
-Questionable use of curly braces in "b5 tp1 t1  v={({a}-1)*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "((a)-1)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
+Questionable use of curly braces in "b5 tp1 t1  v={{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
 Questionable use of curly braces in "b8 tp1 tp2  i={{t}*{c}*{f}*(v(tp1)-v(tp2))}"
     Error: undefined symbol in: "(t)*(c)*(f)*([v](tp1)-v(tp2))"
-Questionable use of curly braces in "b6 t2 tp2  v={({a}-1)*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "((a)-1)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
-Questionable use of curly braces in "b1 bp1 b1  v={(1-{a})*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "(1-(a))*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
-Questionable use of curly braces in "b2 b2 bp2  v={(1-{a})*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "(1-(a))*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
+Questionable use of curly braces in "b6 t2 tp2  v={{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
+Questionable use of curly braces in "b1 bp1 b1  v={-{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "-(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
+Questionable use of curly braces in "b2 b2 bp2  v={-{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "-(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
 Questionable use of curly braces in "b4 bp1 bp2  i={{b}*{c}*{f}*(v(bp1)-v(bp2))}"
     Error: undefined symbol in: "(b)*(c)*(f)*([v](bp1)-v(bp2))"
-Questionable use of curly braces in "b5 tp1 t1  v={({a}-1)*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "((a)-1)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
+Questionable use of curly braces in "b5 tp1 t1  v={{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
 Questionable use of curly braces in "b8 tp1 tp2  i={{t}*{c}*{f}*(v(tp1)-v(tp2))}"
     Error: undefined symbol in: "(t)*(c)*(f)*([v](tp1)-v(tp2))"
-Questionable use of curly braces in "b6 t2 tp2  v={({a}-1)*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "((a)-1)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
-Questionable use of curly braces in "b1 bp1 b1  v={(1-{a})*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "(1-(a))*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
-Questionable use of curly braces in "b2 b2 bp2  v={(1-{a})*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "(1-(a))*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
+Questionable use of curly braces in "b6 t2 tp2  v={{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
+Questionable use of curly braces in "b1 bp1 b1  v={-{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "-(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
+Questionable use of curly braces in "b2 b2 bp2  v={-{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "-(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
 Questionable use of curly braces in "b4 bp1 bp2  i={{b}*{c}*{f}*(v(bp1)-v(bp2))}"
     Error: undefined symbol in: "(b)*(c)*(f)*([v](bp1)-v(bp2))"
-Questionable use of curly braces in "b5 tp1 t1  v={({a}-1)*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "((a)-1)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
+Questionable use of curly braces in "b5 tp1 t1  v={{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
 Questionable use of curly braces in "b8 tp1 tp2  i={{t}*{c}*{f}*(v(tp1)-v(tp2))}"
     Error: undefined symbol in: "(t)*(c)*(f)*([v](tp1)-v(tp2))"
-Questionable use of curly braces in "b6 t2 tp2  v={({a}-1)*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "((a)-1)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
-Questionable use of curly braces in "b1 bp1 b1  v={(1-{a})*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "(1-(a))*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
-Questionable use of curly braces in "b2 b2 bp2  v={(1-{a})*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}-2))}"
-    Error: undefined symbol in: "(1-(a))*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)-2))"
+Questionable use of curly braces in "b6 t2 tp2  v={{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
+Questionable use of curly braces in "b1 bp1 b1  v={-{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "-(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
+Questionable use of curly braces in "b2 b2 bp2  v={-{a}*(v(b1)-v(b2)+v(t2)-v(t1))/(2*({a}+1))}"
+    Error: undefined symbol in: "-(a)*([v](b1)-v(b2)+v(t2)-v(t1))/(2*((a)+1))"
 Direct Newton iteration for .op point succeeded.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Date: Tue Jun 02 21:49:43 2020
-Total elapsed time: 0.161 seconds.
-=======
-Date: Mon Jun 01 19:51:18 2020
-Total elapsed time: 0.188 seconds.
->>>>>>> c5bcdedb406eeb37dc531e07048d5f61fd1b2720
-=======
-Date: Wed Jun 03 01:18:20 2020
-Total elapsed time: 0.448 seconds.
->>>>>>> 124c0de2922b4ba698cfbd841acf8d2f03f03802
+Date: Sat Oct 31 19:15:49 2020
+Total elapsed time: 0.033 seconds.
 
 tnom = 27
 temp = 27
