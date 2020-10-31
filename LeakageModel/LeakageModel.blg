@@ -1,10 +1,58 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: LeakageModel.aux
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: LeakageModel.aux
 The style file: IEEEtran.bst
-I found no \citation commands---while reading file LeakageModel.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: leakBib.bib
--- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+Warning--I didn't find a database entry for ""
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-(There was 1 error message)
+You've used 1 entry,
+            4087 wiz_defined-function locations,
+            829 strings with 7489 characters,
+and the built_in function-call counts, 926 in all, are:
+= -- 73
+> -- 11
+< -- 10
++ -- 8
+- -- 1
+* -- 57
+:= -- 157
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 21
+cite$ -- 1
+duplicate$ -- 58
+empty$ -- 60
+format.name$ -- 1
+if$ -- 196
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 8
+newline$ -- 26
+num.names$ -- 1
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 67
+stack$ -- 0
+substring$ -- 50
+swap$ -- 53
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 1
+warning$ -- 0
+while$ -- 4
+width$ -- 2
+write$ -- 33
+(There was 1 warning)
