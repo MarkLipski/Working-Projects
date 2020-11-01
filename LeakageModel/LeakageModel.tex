@@ -95,17 +95,35 @@
 	\begin{equation}
 	V_{TP1}(t) = \exp\left(\frac{-t}{\tau}\right)V_{TP1}^{i} + \left(1 - \exp\left(\frac{-t}{\tau}\right)\right)V_{T1},
 	\end{equation}
-	where $\tau$ is,
+	where $\tau$ is the first order time constant of the circuit, and $V_{TP1}^i$ is the initial value of $V_{TP1}$ at the start of the first phase. 
+	
+	In order to acquire the value of $\tau$, a frequency domain analysis of the structure in Fig. \ref{Fig:Phase1EQ} can be performed. To simplify the analysis, the value of $V_{B1} = 0$, and the initial conditions on the capacitors are ignored, and the structure is analyzed with respect to $V_{T1}$, the resulting nodal equation at $V_{TP1}$ is 
 	\begin{equation}
-	\tau = 2R_{ON}C_{Fly}\left(1+\frac{\alpha_B+\alpha_T}{2}\right),
+	\tfrac{V_{TP1} - V_{T1}}{R_{SW}} + s\alpha_T CV_{TP1} + sC(V_{TP1} - V_{BP1}) = 0,
 	\end{equation}
-	and $V_{TP1}^i$ is the initial value of $V_{TP1}$ at the start of the first phase. The final value of $V_{TP1}$ can be evaluated at $t = \frac{T_{SW}}{2}$, as phase 1 occupies approximately half the period,
+	similarly, a nodal analysis at $V_{BP1}$ yields,
+	\begin{equation}
+	\tfrac{V_{BP1}}{R_{SW}} + s\alpha_B CV_{BP1} + sC(V_{BP1} - V_{TP1}) = 0.
+	\end{equation}
+	These two nodal equations can then be used to solve for the dominant pole of the circuit, yielding
+	\begin{equation}
+	V_{TP1} = \tfrac{V_{T1}(sC(\alpha_B + 1))}{s^2C^2R^2(\alpha_B + \alpha_T + \alpha_B\alpha_T) + sRC(2+\alpha_B+\alpha_T) + 1},
+	\end{equation}
+	however, if it is assumed that $\alpha_T = \alpha_B$ then the simplified expression is,
+	\begin{equation}
+	V_{TP1} = \tfrac{V_{T1}(sC(\alpha_B + 1))}{(s\alpha_B CR + 1)(sCR(2+\alpha_B) + 1)}.
+	\end{equation}
+	The resulting first order time constant is then,
+	\begin{equation}
+	\tau = R_{ON}C_{Fly}\left(2+\alpha_B\right),
+	\end{equation}
+	The final value of $V_{TP1}$ can be evaluated at $t = \frac{T_{SW}}{2}$, as phase 1 occupies approximately half the period,
 	\begin{equation}
 	V_{TP1}^f = \exp\left\!(\tfrac{-T_{SW}}{2\tau}\right)V_{TP1}^{i} + \left(1 - \! \exp\!\left(\tfrac{-T_{SW}}{2\tau}\right)\right)V_{T1}.
 	\end{equation}	
 	Finally, a substitution can be made, relating to the exponential decay at the end of the time step,
 	\begin{equation}
-	A = \exp\left(-\tfrac{T_{SW}}{2\tau}\right) = \exp\left(\tfrac{T_{SW}}{2R_{ON}C_{Fly}\left(2+\alpha_B+\alpha_T\right)}\right),
+	A = \exp\left(-\tfrac{T_{SW}}{2\tau}\right) = \exp\left(\tfrac{T_{SW}}{2R_{ON}C_{Fly}\left(2+\alpha_B\right)}\right),
 	\end{equation}
 	which can be used to create a simplified expression for $V_{TP1}^f$,
 	\begin{equation}
