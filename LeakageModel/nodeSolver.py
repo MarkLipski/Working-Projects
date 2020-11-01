@@ -16,9 +16,7 @@ def get_tf(expr, var):
 def roots(a, b, c):
     A = (-b+sqrt(b^2 - 4*a*c))/(2*a)
 
-#Nodal equations are roughly
-# (1) s*C*(Vt - Vb + VC) + s*C*T*Vt + (Vt)/R = 0
-# (2) s*C*(Vb - Vt - VC) + s*C*B*Vb + (Vb)/R = 0
+
 s = Symbol("s")
 C = Symbol("C")
 V1 = Symbol("V1")
@@ -32,7 +30,9 @@ R = Symbol("R")
 B = Symbol("B")
 T = Symbol("T")
 
-
+#Nodal equations for (VC) are roughly
+# (1) s*C*(Vt - Vb + VC) + s*C*T*Vt + (Vt)/R = 0
+# (2) s*C*(Vb - Vt - VC) + s*C*B*Vb + (Vb)/R = 0
 
 #Rearranging (2)
 Vb = ((VC+Vt)*s*C)/(s*C*(1+B) + 1/R)
@@ -40,10 +40,19 @@ Vb = ((VC+Vt)*s*C)/(s*C*(1+B) + 1/R)
 G = ((Vb-VC)*s*C)/(s*C*(1+B) + 1/R)
 
 Vt = solve(Vt-G, Vt)[0]
+print("Vt = ", factor(Vt))
+
+#Nodal equations for (VT1) are roughly
+# (1) s*C*(Vt - Vb) + s*C*T*Vt + (Vt-V1)/R = 0
+# (2) s*C*(Vb - Vt) + s*C*B*Vb + (Vb)/R = 0
+
+#Rearranging (2)
+Vb = (Vt*s*C)/(s*C*(1+B) + 1/R)
+#Rearranging (1)
+G = (Vb*s*C + V1/R)/(s*C*(1+T) + 1/R)
+
+Vt = solve(Vt-G, Vt)[0]
+
 
 num,den = Vt.as_numer_denom()
-
-
-
-#print(simplify(Y))
-print("Vt = ", factor(Vt))
+print("Vt = ", den)
