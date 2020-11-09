@@ -17,10 +17,11 @@
 	\section{Abstract}
 	This paper constructs a steady state model of the continuous conversion ratio charge pump architecture from first principles, incorporating incomplete charge transfer and finite switch resistance. The model is then verified using a pspice model of the circuit, and the limitations of the assumptions are discussed.
 	\section{Introduction}
+	There are several pre-existing models of switched capacitor power converters (SCPCs) which model the performance of the structures under ideal switching conditions, with full charge transfer and minimal device parasitics. However, to the best of the authors knowledge, there exist no models which incorporate both the effect of transistor leakage, or non-ideal clock generation. These factors are becoming increasingly important, as technology nodes scale down, increasing leakage effects which need to be incorporated to ensure the accuracy of models.  
 	
-	
+	The following work develops a model of the SCPC incorporating finite switch resistance on both the top and bottom plates, along with transistor and capacitor leakage effects. 
 	\section{Steady State Model}
-	The foundational building block of most Switched Capacitor Power Converter (SCPC) architectures is the circuit in Fig. \ref{Fig:SCCell}, where the flying capacitor connects to 4 unique voltage domains. This flying capacitor cell can then be abstracted as the four terminal device seen in Fig. \ref{Fig:SCCell_Abs}. The SC cell can then be used to construct various dc-dc converter configurations, such as the three stage Dickson in Fig. \ref{Fig:Dickson_Block} or the series parallel converter in Fig. \ref{Fig:SeriesP_Block}.
+	The foundational building block of most Switched Capacitor Power Converter (SCPC) architectures is the circuit in Fig. \ref{Fig:SCCell}, where the flying capacitor connects to 4 unique voltage domains. This switched capacitor (SC) cell can then be abstracted as the four terminal device seen in Fig. \ref{Fig:SCCell_Abs}. The SC cell can be used to construct various dc-dc converter configurations, such as the three stage Dickson in Fig. \ref{Fig:Dickson_Block} or the series parallel converter in Fig. \ref{Fig:SeriesP_Block}.
 	
 	\begin{figure}
 		\centering

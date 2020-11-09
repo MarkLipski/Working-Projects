@@ -1,0 +1,42 @@
+Circuit: * C:\Users\Mark\Documents\Working-Projects\LeakageModel\LTspice\PTM_tb.asc
+
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(x1:ctrl)
+Ignoring empty pin current: Ix(x1:ctrl)
+Heightened Def Con from 1.00003e-013 to 2.3953e-009
+Heightened Def Con from 0.0015 to 0.00150033
+Heightened Def Con from 0.003 to 0.00300004
+Heightened Def Con from 0.0085 to 0.00850033
+Heightened Def Con from 0.0095 to 0.00950033
+Heightened Def Con from 0.0105 to 0.0105003
+Heightened Def Con from 0.0135 to 0.0135003
+Heightened Def Con from 0.0145 to 0.0145003
+Heightened Def Con from 0.0155 to 0.0155003
+Heightened Def Con from 0.0165 to 0.0165003
+Heightened Def Con from 0.0175 to 0.0175003
+Heightened Def Con from 0.0185 to 0.0185003
+Heightened Def Con from 0.0205 to 0.0205003
+Heightened Def Con from 0.0215 to 0.0215003
+Heightened Def Con from 0.0225 to 0.0225003
+Heightened Def Con from 0.0235 to 0.0235003
+Heightened Def Con from 0.028 to 0.028
+Heightened Def Con from 0.0285 to 0.0285003
+Heightened Def Con from 0.0295 to 0.0295003
+
+Date: Sun Nov 08 20:25:21 2020
+Total elapsed time: 137.721 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 6216693
+traniter = 6216685
+tranpoints = 3106933
+accept = 3105019
+rejected = 1933
+matrix size = 32
+fillins = 0
+solver = Normal
+Matrix Compiler1: 2.34 KB object code size  1.0/0.8/[0.3]
+Matrix Compiler2: 3.32 KB object code size  0.5/0.8/[0.3]
+
