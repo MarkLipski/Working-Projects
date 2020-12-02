@@ -1,0 +1,601 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.30)  1 DEC 2020 21:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Monolithic DC-DC Synthesis.tex"
+(./Monolithic DC-DC Synthesis.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count176
+\Gm@cntv=\count177
+\c@Gm@tempcnt=\count178
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen143
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count179
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count180
+\leftroot@=\count181
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count182
+\DOTSCASE@=\count183
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count184
+\c@MaxMatrixCols=\count185
+\dotsspace@=\muskip16
+\c@parentequation=\count186
+\dspbrk@lvl=\count187
+\tag@help=\toks17
+\row@=\count188
+\column@=\count189
+\maxfields@=\count190
+\andhelp@=\toks18
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@ALC@unique=\count191
+\c@ALC@line=\count192
+\c@ALC@rem=\count193
+\c@ALC@depth=\count194
+\ALC@tlm=\skip52
+\algorithmicindent=\skip53
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tabstackengine/tabstackengine.sty
+Package: tabstackengine 2018/03/05 (V2.10) tabbed stacking
+
+(/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count195
+)
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count196
+\loi_nestcnt=\count197
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count198
+\calc@Bcount=\count199
+\calc@Adimen=\dimen154
+\calc@Bdimen=\dimen155
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count266
+\calc@Cskip=\skip56
+)
+\c@@stackindex=\count267
+\@boxshift=\skip57
+\stack@tmplength=\skip58
+\temp@stkl=\skip59
+\@stackedboxwidth=\skip60
+\@addedbox=\box47
+\@anchorbox=\box48
+\stackedbox=\box49
+\@centerbox=\box50
+\c@ROWcellindex@=\count268
+)
+\c@TABrowindex@=\count269
+\c@TABcolindex@=\count270
+\c@TABalignmentindex@=\count271
+\TABcelltoks=\toks21
+\TABcoltoks=\toks22
+\LstrutTABtoks=\toks23
+\RstrutTABtoks=\toks24
+\TAB@toks=\toks25
+\TABruleshift=\skip61
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen156
+\captionmargin@=\dimen157
+\captionwidth=\dimen158
+\caption@tempdima=\dimen159
+\caption@indent=\dimen160
+\caption@parindent=\dimen161
+\caption@hangindent=\dimen162
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count272
+\c@continuedfloat=\count273
+)
+\c@subfigure=\count274
+\c@subtable=\count275
+)
+(/usr/share/texlive/texmf-dist/tex/latex/sttools/cuted.sty
+Package: cuted 2012/10/04 v1.5 Mixing onecolumn and twocolumn modes
+\At@ViperColsBreak=\toks26
+\v@aaa=\box51
+\v@ccc=\box52
+\lastskip@a=\skip62
+\lastskip@b=\skip63
+\lastskip@d=\skip64
+\lastbox@a=\box53
+\stripsep=\skip65
+\@viper=\box54
+\viper@penalty=\count276
+\hold@viper=\box55
+\ht@viper=\dimen163
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count277
+\l__pdf_internal_box=\box56
+)
+(./Monolithic DC-DC Synthesis.aux (./4Terminal/4Terminal.aux))
+\openout1 = `"Monolithic DC-DC Synthesis.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count278
+\scratchdimen=\dimen164
+\scratchbox=\box57
+\nofMPsegments=\count279
+\nofMParguments=\count280
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count281
+\MPscratchDim=\dimen165
+\MPnumerator=\count282
+\makeMPintoPDFobject=\count283
+\everyMPtoPDFconversion=\toks28
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+(./Monolithic DC-DC Synthesis.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write3
+\openout3 = `"Monolithic DC-DC Synthesis.toc"'.
+
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Chapter 1.
+[3
+
+]
+\openout2 = `4Terminal/4Terminal.aux'.
+
+ (./4Terminal/4Terminal.tex
+Chapter 2.
+<4Terminal/Figures/SCCell_1.pdf, id=16, 105.9275pt x 67.04895pt>
+File: 4Terminal/Figures/SCCell_1.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/SCCell_1.pdf>
+Package pdftex.def Info: 4Terminal/Figures/SCCell_1.pdf  used on input line 8.
+(pdftex.def)             Requested size: 187.89914pt x 118.93956pt.
+<4Terminal/Figures/Phase1.pdf, id=17, 105.9275pt x 52.38806pt>
+File: 4Terminal/Figures/Phase1.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/Phase1.pdf>
+Package pdftex.def Info: 4Terminal/Figures/Phase1.pdf  used on input line 20.
+(pdftex.def)             Requested size: 187.89914pt x 92.93225pt.
+<4Terminal/Figures/Phase2.pdf, id=18, 105.9275pt x 57.6233pt>
+File: 4Terminal/Figures/Phase2.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/Phase2.pdf>
+Package pdftex.def Info: 4Terminal/Figures/Phase2.pdf  used on input line 27.
+(pdftex.def)             Requested size: 187.89914pt x 102.2192pt.
+[4
+
+
+ <./4Terminal/Figures/SCCell_1.pdf>]
+<4Terminal/Figures/Buck.pdf, id=41, 140.90059pt x 68.54433pt>
+File: 4Terminal/Figures/Buck.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/Buck.pdf>
+Package pdftex.def Info: 4Terminal/Figures/Buck.pdf  used on input line 48.
+(pdftex.def)             Requested size: 234.8775pt x 114.26881pt.
+<4Terminal/Figures/CellRes_SSL_Basic.pdf, id=42, 130.13615pt x 99.2658pt>
+File: 4Terminal/Figures/CellRes_SSL_Basic.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/CellRes_SSL_Basic.pdf>
+Package pdftex.def Info: 4Terminal/Figures/CellRes_SSL_Basic.pdf  used on input
+ line 65.
+(pdftex.def)             Requested size: 187.89914pt x 143.33794pt.
+ [5 <./4Terminal/Figures/Phase1.pdf> <./4Terminal/Figures/Phase2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./4Terminal/Figures/Phase2.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./4Terminal/Figures/Buck.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./4Terminal/Figures/Buck.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+>]
+<4Terminal/Figures/SCCell.pdf, id=77, 124.74777pt x 105.39377pt>
+File: 4Terminal/Figures/SCCell.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/SCCell.pdf>
+Package pdftex.def Info: 4Terminal/Figures/SCCell.pdf  used on input line 77.
+(pdftex.def)             Requested size: 124.74745pt x 105.3935pt.
+<4Terminal/Figures/CellRes.pdf, id=78, 129.75974pt x 116.30879pt>
+File: 4Terminal/Figures/CellRes.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/CellRes.pdf>
+Package pdftex.def Info: 4Terminal/Figures/CellRes.pdf  used on input line 95.
+(pdftex.def)             Requested size: 187.89914pt x 168.43222pt.
+ [6 <./4Terminal/Figures/CellRes_SSL_Basic.pdf> <./4Terminal/Figures/SCCell.pdf
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./4Terminal/Figures/SCCell.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]
+<4Terminal/Figures/Phase1EQ.pdf, id=117, 118.30698pt x 128.5528pt>
+File: 4Terminal/Figures/Phase1EQ.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/Phase1EQ.pdf>
+Package pdftex.def Info: 4Terminal/Figures/Phase1EQ.pdf  used on input line 108
+.
+(pdftex.def)             Requested size: 164.41711pt x 178.6702pt.
+<4Terminal/Figures/Phase2EQ.pdf, id=118, 118.30699pt x 128.5528pt>
+File: 4Terminal/Figures/Phase2EQ.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/Phase2EQ.pdf>
+Package pdftex.def Info: 4Terminal/Figures/Phase2EQ.pdf  used on input line 114
+.
+(pdftex.def)             Requested size: 164.41711pt x 178.6702pt.
+ [7 <./4Terminal/Figures/CellRes.pdf> <./4Terminal/Figures/Phase1EQ.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./4Terminal/Figures/Phase1EQ.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+> <./4Terminal/Figures/Phase2EQ.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./4Terminal/Figures/Phase2EQ.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>]
+<4Terminal/Figures/Phase1EQ_t=0.pdf, id=185, 84.10919pt x 72.7992pt>
+File: 4Terminal/Figures/Phase1EQ_t=0.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/Phase1EQ_t=0.pdf>
+Package pdftex.def Info: 4Terminal/Figures/Phase1EQ_t=0.pdf  used on input line
+ 173.
+(pdftex.def)             Requested size: 140.92793pt x 121.99965pt.
+ [8 <./4Terminal/Figures/Phase1EQ_t=0.pdf>]
+
+LaTeX Warning: Reference `' on page 9 undefined on input line 203.
+
+
+LaTeX Warning: Reference `' on page 9 undefined on input line 203.
+
+<4Terminal/Figures/CellRes_FSL.pdf, id=201, 136.83046pt x 95.99391pt>
+File: 4Terminal/Figures/CellRes_FSL.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/CellRes_FSL.pdf>
+Package pdftex.def Info: 4Terminal/Figures/CellRes_FSL.pdf  used on input line 
+207.
+(pdftex.def)             Requested size: 234.8775pt x 164.78111pt.
+<4Terminal/Figures/CellRes_FSL_2.pdf, id=202, 129.75974pt x 116.30879pt>
+File: 4Terminal/Figures/CellRes_FSL_2.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/CellRes_FSL_2.pdf>
+Package pdftex.def Info: 4Terminal/Figures/CellRes_FSL_2.pdf  used on input lin
+e 222.
+(pdftex.def)             Requested size: 187.89914pt x 168.43222pt.
+
+LaTeX Warning: Reference `' on page 9 undefined on input line 229.
+
+
+LaTeX Warning: Reference `' on page 9 undefined on input line 233.
+
+[9 <./4Terminal/Figures/CellRes_FSL.pdf>]
+<4Terminal/Figures/NDickson.pdf, id=228, 373.18826pt x 85.30109pt>
+File: 4Terminal/Figures/NDickson.pdf Graphic file (type pdf)
+<use 4Terminal/Figures/NDickson.pdf>
+Package pdftex.def Info: 4Terminal/Figures/NDickson.pdf  used on input line 238
+.
+(pdftex.def)             Requested size: 469.75502pt x 107.38231pt.
+
+
+LaTeX Warning: Reference `' on page 10 undefined on input line 239.
+
+
+LaTeX Warning: Reference `' on page 10 undefined on input line 239.
+
+
+LaTeX Warning: Reference `' on page 10 undefined on input line 243.
+
+
+LaTeX Warning: Reference `' on page 10 undefined on input line 243.
+
+
+LaTeX Warning: Reference `' on page 10 undefined on input line 245.
+
+
+LaTeX Warning: Reference `' on page 10 undefined on input line 249.
+
+
+LaTeX Warning: Reference `' on page 10 undefined on input line 249.
+
+[10 <./4Terminal/Figures/CellRes_FSL_2.pdf> <./4Terminal/Figures/NDickson.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./4Terminal/Figures/NDickson.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `' on page 11 undefined on input line 255.
+
+
+LaTeX Warning: Reference `' on page 11 undefined on input line 255.
+
+) [11]
+Chapter 3.
+[12
+
+
+]
+Chapter 4.
+[13
+
+]
+Chapter 5.
+[14
+
+]
+Chapter 6.
+[15
+
+]
+Chapter 7.
+[16
+
+]
+Chapter 8.
+[17
+
+]
+Chapter 9.
+[18
+
+]
+Chapter 10.
+[19
+
+]
+Chapter 11.
+[20
+
+]
+Chapter 12.
+[21
+
+] (./Monolithic DC-DC Synthesis.aux (./4Terminal/4Terminal.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5687 strings out of 481239
+ 81983 string characters out of 5920376
+ 335235 words of memory out of 5000000
+ 20871 multiletter control sequences out of 15000+600000
+ 537401 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 48i,8n,46p,928b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "Monolithic DC-DC Synthesis.pdf" (21 pages, 288935 bytes).
+PDF statistics:
+ 342 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+

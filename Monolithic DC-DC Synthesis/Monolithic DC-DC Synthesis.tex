@@ -1,0 +1,43 @@
+\documentclass{report}
+\usepackage[margin=1in]{geometry}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{tabstackengine}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{cuted}
+
+\begin{document}
+	\tableofcontents
+	\section*{Preface}
+	The work contained in this PDF is an attempt on my part to synthesize the entirety of my understanding of monolithic, or "fully integrated" power conversion. I am doing this to improve my technical writing and communication abilities, in addition to furthering my own understanding of the material on which I write, hopefully someone can make some use of these writings. At the time of writing this, I have no idea how long this will take, or if I will ever actually complete this work, but I hope to make some progress.
+	
+	The current plan for writing this is to write it in such a way that it appeals to the reader from first principles, as much of the work and theory presented is without real world validation, or chip fabrication. The required background on the part of the reader is essentially that they understand:
+	\begin{itemize}
+		\item Circuit theory - Resistors, capacitors, inductors, nodal analysis, etc.
+		\item Electronics - Comfortable with diodes, and transistors, along with there various uses. Transistors in saturation, triode, on resistance of transistors, gate capacitance, etc.
+		\item Mathematics - Differential equations, laplace transforms, frequency domain analysis.
+	\end{itemize}
+	Provided the reader has background in these topics, it is my hope that my communication abilities are sufficient enough to make the following writings understandable.
+	   
+	\chapter{Introduction}
+	
+	
+	\include{4Terminal/4Terminal}	
+	
+	\chapter{Flying Capacitor Design}
+	\label{CH:FlyingCap}
+	\chapter{Transistor Considerations}
+	\chapter{Time Interleaving}
+	\chapter{Charge Reuse}
+	\chapter{Stage Outphasing}
+	\chapter{Reconfigurable Architectures}
+	\chapter{High Accuracy Models}
+	\chapter{Control}
+	\chapter{Design Examples}
+	\chapter{Continuously Scalable}
+	
+\end{document}
