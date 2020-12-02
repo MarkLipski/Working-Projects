@@ -1,0 +1,106 @@
+Circuit: * C:\Users\Mark\Documents\Working-Projects\Monolithic DC-DC Synthesis\4Terminal\SPICE\SCcore_TB.asc
+
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(x1:clk1)
+Ignoring empty pin current: Ix(x1:clk1)
+.step fsw=1e+007
+.step fsw=2e+007
+.step fsw=3e+007
+.step fsw=4e+007
+.step fsw=5e+007
+.step fsw=6e+007
+.step fsw=7e+007
+.step fsw=8e+007
+.step fsw=9e+007
+.step fsw=1e+008
+.step fsw=1.1e+008
+.step fsw=1.2e+008
+.step fsw=1.3e+008
+.step fsw=1.4e+008
+.step fsw=1.5e+008
+.step fsw=1.6e+008
+.step fsw=1.7e+008
+.step fsw=1.8e+008
+.step fsw=1.9e+008
+.step fsw=2e+008
+.step fsw=2.1e+008
+.step fsw=2.2e+008
+.step fsw=2.3e+008
+.step fsw=2.4e+008
+.step fsw=2.5e+008
+
+
+Measurement: ioutavg
+  step	AVG(i(out))	FROM	TO
+     1	0.00150191	0	1e-006
+     2	0.00300386	0	5e-007
+     3	0.00450373	0	3.33333e-007
+     4	0.00598444	0	2.5e-007
+     5	0.00740537	0	2e-007
+     6	0.00872599	0	1.66667e-007
+     7	0.00991652	0	1.42857e-007
+     8	0.010966	0	1.25e-007
+     9	0.0118763	0	1.11111e-007
+    10	0.0126575	0	1e-007
+    11	0.0133232	0	9.0909e-008
+    12	0.01389	0	8.33333e-008
+    13	0.0143707	0	7.6923e-008
+    14	0.0147794	0	7.14285e-008
+    15	0.0151254	0	6.66666e-008
+    16	0.015419	0	6.25e-008
+    17	0.0156664	0	5.88234e-008
+    18	0.0158788	0	5.55556e-008
+    19	0.0160587	0	5.26315e-008
+    20	0.0162139	0	5e-008
+    21	0.0163424	0	4.7619e-008
+    22	0.0164531	0	4.54545e-008
+    23	0.0165471	0	4.34782e-008
+    24	0.0166248	0	4.16666e-008
+    25	0.0166876	0	4e-008
+
+Measurement: iinavg
+  step	AVG(i(in))	FROM	TO
+     1	-0.0031048	0	1e-006
+     2	-0.00620955	0	5e-007
+     3	-0.00930978	0	3.33333e-007
+     4	-0.0123701	0	2.5e-007
+     5	-0.0153132	0	2e-007
+     6	-0.0180536	0	1.66667e-007
+     7	-0.0205335	0	1.42857e-007
+     8	-0.0227305	0	1.25e-007
+     9	-0.0246487	0	1.11111e-007
+    10	-0.0263091	0	1e-007
+    11	-0.0277373	0	9.0909e-008
+    12	-0.0289665	0	8.33333e-008
+    13	-0.0300222	0	7.6923e-008
+    14	-0.030932	0	7.14285e-008
+    15	-0.0317202	0	6.66666e-008
+    16	-0.0324001	0	6.25e-008
+    17	-0.0329934	0	5.88234e-008
+    18	-0.033511	0	5.55556e-008
+    19	-0.0339648	0	5.26315e-008
+    20	-0.0343651	0	5e-008
+    21	-0.0347192	0	4.7619e-008
+    22	-0.0350337	0	4.54545e-008
+    23	-0.0353121	0	4.34782e-008
+    24	-0.0355616	0	4.16666e-008
+    25	-0.035784	0	4e-008
+
+
+Date: Tue Dec 01 23:15:43 2020
+Total elapsed time: 44.757 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 224305
+traniter = 224301
+tranpoints = 108051
+accept = 106489
+rejected = 1562
+matrix size = 10
+fillins = 0
+solver = Normal
+Matrix Compiler1:      15 opcodes  0.1/[0.0]/0.0
+Matrix Compiler2: 724 bytes object code size  0.1/0.1/[0.1]
+
