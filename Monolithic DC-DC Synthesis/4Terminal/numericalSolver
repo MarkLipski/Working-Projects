@@ -1,0 +1,67 @@
+from sympy import *
+from sympy import Poly
+from sympy.solvers import solve
+
+
+A = Symbol("A")
+VT1 = Symbol("VT1")
+VTP1_f = Symbol("VTP1_f")
+VTP2_f = Symbol("VTP2_f")
+VBP1_f = Symbol("VBP1_f")
+VBP2_f = Symbol("VBP2_f")
+V2 = Symbol("V2")
+Vti = Symbol("Vti")
+VC = Symbol("VC")
+Vbi = Symbol("Vbi")
+
+Vt = Symbol("Vt")
+Vb = Symbol("Vb")
+
+R = Symbol("R")
+B = Symbol("B")
+T = Symbol("T")
+
+#Nodal equations for (VC) are roughly
+# (1) s*C*(Vt - Vb - Vti + Vbi) + s*C*T*(Vt-Vti) + (Vt-V1)/R = 0
+# (2) s*C*(Vb - Vt - Vbi + Vti) + s*C*B*(Vb-Vbi) + (Vb-V2)/R = 0
+#Rearranging (2)
+# (2) sC(1+B)Vb + Vb/R = V2/R + sC(Vbi(1+B) + (Vt - Vti))
+
+#Rearranging (2)
+num_2 = V2/R + s*C*(Vbi*(1+B) + (Vt - Vti))
+Vb = num_2/(s*C*(1+B) + 1/R)
+#Rearranging (1)
+# (1) sC(1+T)Vt + Vt/R = V1/R + sC(Vti(1+T) + (Vb - Vbi))
+num_1 = V1/R + s*C*(Vti*(1+T) + (Vb - Vbi))
+G = num_1/(s*C*(1+T) + 1/R)
+
+Vt = solve(Vt-G, Vt)[0]
+print("Vt = ", factor(Vt))
+
+#Nodal equations for (VC) are roughly
+# (1) s*C*(Vt - Vb - Vti + Vbi) + s*C*T*(Vt-Vti) + (Vt-V1)/R = 0
+# (2) s*C*(Vb - Vt - Vbi + Vti) + (Vb-V2)/R = 0
+#Rearranging (2)
+# (2) sC(1+B)Vb + Vb/R = V2/R + sC(Vbi(1+B) + (Vt - Vti))
+
+#Rearranging (2)
+num_2 = V2/R + s*C*(Vbi + (Vt - Vti))
+Vb = num_2/(s*C + 1/R)
+#Rearranging (1)
+# (1) sC(1+T)Vt + Vt/R = V1/R + sC(Vti(1+T) + (Vb - Vbi))
+num_1 = V1/R + s*C*(Vti*(1+T) + (Vb - Vbi))
+G = num_1/(s*C*(1+T) + 1/R)
+
+Vt = solve(Vt-G, Vt)[0]
+print("Vt = ", factor(Vt))
+
+#Rearranging (2)
+num_2 = V2/R + s*C*(Vbi*(1+B) + (Vt - Vti))
+Vb = num_2/(s*C*(1+B) + 1/R)
+#Rearranging (1)
+# (1) sC(1+T)Vt + Vt/R = V1/R + sC(Vti(1+T) + (Vb - Vbi))
+num_1 = V1/R + s*C*(Vti + (Vb - Vbi))
+G = num_1/(s*C + 1/R)
+
+Vt = solve(Vt-G, Vt)[0]
+print("Vt = ", factor(Vt))

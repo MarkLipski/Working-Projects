@@ -14,7 +14,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (1.0.1+r73)"
-   sodipodi:docname="CellRes_FSL.svg">
+   sodipodi:docname="CellRes_FSL_3.svg">
   <defs
      id="defs2">
     <symbol
@@ -106,9 +106,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="328.57685"
-     inkscape:cy="428.40508"
+     inkscape:zoom="2.8"
+     inkscape:cx="314.24551"
+     inkscape:cy="351.69831"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -132,7 +132,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -327,14 +327,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="86.254166"
-       y="78.581253"
+       x="83.34375"
+       y="78.052086"
        id="text1728-3"><tspan
          sodipodi:role="line"
          id="tspan1726-1"
-         x="86.254166"
-         y="78.581253"
-         style="font-size:2.11667px;stroke-width:0.264583">R<tspan
+         x="83.34375"
+         y="78.052086"
+         style="font-size:2.11667px;stroke-width:0.264583">(1+A)R<tspan
    style="font-size:1.37584px;baseline-shift:sub;stroke-width:0.264583"
    id="tspan1730-7">Fly</tspan></tspan></text>
     <path
@@ -650,49 +650,57 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="86.783333"
-       y="80.962502"
+       x="83.60833"
+       y="80.697914"
        id="text488"><tspan
          sodipodi:role="line"
          id="tspan486"
-         x="86.783333"
-         y="80.962502"
-         style="font-size:2.11667px;stroke-width:0.264583">α<tspan
+         x="83.60833"
+         y="80.697914"
+         style="font-size:2.11667px;stroke-width:0.264583">(Aα<tspan
    style="font-size:65%;baseline-shift:sub"
-   id="tspan490">T</tspan></tspan></text>
+   id="tspan2080">B</tspan>+α<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2082">T</tspan>)<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan490"> </tspan></tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.138049;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 86.254167,79.374999 h 3.704166"
-       id="path492" />
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 83.343749,78.845832 h 9.789583"
+       id="path2084" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="85.989586"
+       x="83.34375"
        y="112.44791"
-       id="text1728-3-3"><tspan
+       id="text1728-3-2"><tspan
          sodipodi:role="line"
-         id="tspan1726-1-6"
-         x="85.989586"
+         id="tspan1726-1-9"
+         x="83.34375"
          y="112.44791"
-         style="font-size:2.11667px;stroke-width:0.264583">R<tspan
+         style="font-size:2.11667px;stroke-width:0.264583">(1+A)R<tspan
    style="font-size:1.37584px;baseline-shift:sub;stroke-width:0.264583"
-   id="tspan1730-7-7">Fly</tspan></tspan></text>
+   id="tspan1730-7-1">Fly</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="86.518753"
-       y="114.82916"
-       id="text488-5"><tspan
+       x="83.60833"
+       y="115.09373"
+       id="text488-2"><tspan
          sodipodi:role="line"
-         id="tspan486-3"
-         x="86.518753"
-         y="114.82916"
-         style="font-size:2.11667px;stroke-width:0.264583">α<tspan
+         id="tspan486-7"
+         x="83.60833"
+         y="115.09373"
+         style="font-size:2.11667px;stroke-width:0.264583">(Aα<tspan
    style="font-size:1.37584px;baseline-shift:sub;stroke-width:0.264583"
-   id="tspan490-5">B</tspan></tspan></text>
+   id="tspan2080-0">T</tspan>+α<tspan
+   style="font-size:1.37584px;baseline-shift:sub;stroke-width:0.264583"
+   id="tspan2082-9">B</tspan>)<tspan
+   style="font-size:1.37584px;baseline-shift:sub;stroke-width:0.264583"
+   id="tspan490-3"> </tspan></tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.138049;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 85.989585,113.24166 h 3.704166"
-       id="path492-6" />
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 83.34375,113.24165 h 9.789583"
+       id="path2084-6" />
   </g>
 </svg>

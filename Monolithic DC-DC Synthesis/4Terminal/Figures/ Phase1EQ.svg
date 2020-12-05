@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -15,7 +13,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg10550"
-   inkscape:version="0.92.5 (0.92.5+68)"
+   inkscape:version="1.0.1 (1.0.1+r73)"
    sodipodi:docname=" Phase1EQ.svg">
   <defs
      id="defs10544">
@@ -142,16 +140,17 @@
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
      inkscape:cx="194.31342"
-     inkscape:cy="823.87366"
+     inkscape:cy="238.01716"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:window-width="1299"
-     inkscape:window-height="713"
-     inkscape:window-x="67"
+     inkscape:window-width="1294"
+     inkscape:window-height="704"
+     inkscape:window-x="72"
      inkscape:window-y="27"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0">
     <inkscape:grid
        type="xygrid"
        id="grid10552" />
@@ -164,7 +163,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -209,7 +208,7 @@
        r="0.39687499" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="30.427082"
        y="57.552082"
        id="text15616"><tspan
@@ -217,22 +216,22 @@
          id="tspan15614"
          x="30.427082"
          y="57.552082"
-         style="stroke-width:0.26458332">V<tspan
+         style="stroke-width:0.264583">V<tspan
    style="font-size:65%;baseline-shift:sub"
    id="tspan15618">T1</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="41.38839"
-       y="55.284225"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="42.785332"
+       y="55.62096"
        id="text15622"><tspan
          sodipodi:role="line"
          id="tspan15620"
-         x="41.38839"
-         y="55.284225"
-         style="stroke-width:0.26458332">R<tspan
-   style="font-size:64.99999762%;baseline-shift:sub"
-   id="tspan15624">SW</tspan></tspan></text>
+         x="42.785332"
+         y="55.62096"
+         style="stroke-width:0.264583">R<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan15624" /></tspan></text>
     <ellipse
        style="fill:#000000;fill-opacity:0.99465176;stroke:none;stroke-width:0.26499957;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="path15577-2-7"
@@ -264,7 +263,7 @@
        r="0.39687499" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="30.42708"
        y="70.781242"
        id="text15616-7"><tspan
@@ -272,22 +271,22 @@
          id="tspan15614-8"
          x="30.42708"
          y="70.781242"
-         style="stroke-width:0.26458332">V<tspan
-   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458332"
+         style="stroke-width:0.264583">V<tspan
+   style="font-size:2.06375px;baseline-shift:sub;stroke-width:0.264583"
    id="tspan15618-6">B1</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="41.38839"
-       y="68.51339"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="43.32954"
+       y="68.959801"
        id="text15622-8"><tspan
          sodipodi:role="line"
          id="tspan15620-8"
-         x="41.38839"
-         y="68.51339"
-         style="stroke-width:0.26458332">R<tspan
-   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458332"
-   id="tspan15624-4">SW</tspan></tspan></text>
+         x="43.32954"
+         y="68.959801"
+         style="stroke-width:0.264583">R<tspan
+   style="font-size:2.06375px;baseline-shift:sub;stroke-width:0.264583"
+   id="tspan15624-4" /></tspan></text>
     <ellipse
        style="fill:#000000;fill-opacity:0.99465176;stroke:none;stroke-width:0.26499957;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="path15577-2-7-3"
@@ -336,7 +335,7 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="67.46875"
        y="57.552082"
        id="text15616-0"><tspan
@@ -344,12 +343,12 @@
          id="tspan15614-6"
          x="67.46875"
          y="57.552082"
-         style="stroke-width:0.26458332">V<tspan
-   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458332"
+         style="stroke-width:0.264583">V<tspan
+   style="font-size:2.06375px;baseline-shift:sub;stroke-width:0.264583"
    id="tspan15618-8">T2</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="67.090767"
        y="70.592255"
        id="text15616-7-9"><tspan
@@ -357,8 +356,8 @@
          id="tspan15614-8-2"
          x="67.090767"
          y="70.592255"
-         style="stroke-width:0.26458332">V<tspan
-   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458332"
+         style="stroke-width:0.264583">V<tspan
+   style="font-size:2.06375px;baseline-shift:sub;stroke-width:0.264583"
    id="tspan15618-6-6">B2</tspan></tspan></text>
     <use
        id="use15785"
@@ -394,7 +393,7 @@
        transform="rotate(180,45.247817,13.487102)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.11666989px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+       style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="56.261765"
        y="52.676201"
        id="text1728-3"><tspan
@@ -402,14 +401,14 @@
          id="tspan1726-1"
          x="56.261765"
          y="52.676201"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';stroke-width:0.26458299">α<tspan
-   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458299"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';stroke-width:0.264583">α<tspan
+   style="font-size:2.06375px;baseline-shift:sub;stroke-width:0.264583"
    id="tspan10415">T</tspan>C<tspan
-   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458299"
-   id="tspan10413">Fly</tspan></tspan></text>
+   style="font-size:2.06375px;baseline-shift:sub;stroke-width:0.264583"
+   id="tspan10413" /></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.11666989px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+       style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="56.167271"
        y="79.323524"
        id="text1728-3-9"><tspan
@@ -417,14 +416,14 @@
          id="tspan1726-1-5"
          x="56.167271"
          y="79.323524"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';stroke-width:0.26458299">α<tspan
-   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458299"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';stroke-width:0.264583">α<tspan
+   style="font-size:2.06375px;baseline-shift:sub;stroke-width:0.264583"
    id="tspan10415-0">B</tspan>C<tspan
-   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458299"
-   id="tspan10413-4">Fly</tspan></tspan></text>
+   style="font-size:2.06375px;baseline-shift:sub;stroke-width:0.264583"
+   id="tspan10413-4" /></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.11666989px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+       style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="56.356258"
        y="66.755821"
        id="text1728-3-9-8"><tspan
@@ -432,12 +431,12 @@
          id="tspan1726-1-5-7"
          x="56.356258"
          y="66.755821"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';stroke-width:0.26458299">C<tspan
-   style="font-size:2.06374979px;baseline-shift:sub;stroke-width:0.26458299"
-   id="tspan10413-4-7">Fly</tspan></tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';stroke-width:0.264583">C<tspan
+   style="font-size:2.06375px;baseline-shift:sub;stroke-width:0.264583"
+   id="tspan10413-4-7" /></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="54.172764"
        y="57.485264"
        id="text15979"><tspan
@@ -445,8 +444,8 @@
          id="tspan15977"
          x="54.172764"
          y="57.485264"
-         style="stroke-width:0.26458332">V<tspan
-   style="font-size:64.99999762%;baseline-shift:sub"
+         style="stroke-width:0.264583">V<tspan
+   style="font-size:65%;baseline-shift:sub"
    id="tspan15981">TP1</tspan></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -460,7 +459,7 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="53.905495"
        y="75.057564"
        id="text15989"><tspan
@@ -468,8 +467,8 @@
          id="tspan15987"
          x="53.905495"
          y="75.057564"
-         style="stroke-width:0.26458332">V<tspan
-   style="font-size:64.99999762%;baseline-shift:sub"
+         style="stroke-width:0.264583">V<tspan
+   style="font-size:65%;baseline-shift:sub"
    id="tspan15991">BP1</tspan></tspan></text>
   </g>
 </svg>

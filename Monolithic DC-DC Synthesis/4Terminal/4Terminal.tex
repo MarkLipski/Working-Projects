@@ -1,6 +1,8 @@
 \chapter{Switched Capacitor Power Converters - Fundamentals}
+\label{chap:Fundamentals}
 Switched Capacitor Power Converters (SCPCs)
 	\section{Four Terminal Model}
+	\label{Sec:4TermModel}
 	The four terminal model is the simplest place to begin the explanation of how SCPCs operate. In this, the circuit in Fig. \ref{fig:sccell1} represents the most fundamental unit of the SCPC, with 4 different voltages being connected to a single capacitor through switches. This capacitor is referred to frequently as the flying capacitor in much of the literature, presumably because both the top and bottom plate voltages vary over time, and the capacitor is not "grounded". 
 	
 \begin{figure}
@@ -200,22 +202,87 @@ Switched Capacitor Power Converters (SCPCs)
 	\begin{equation}
 		\Delta V = \frac{A(V_{B1} - V_{T1} - V_{B2} + V_{T2})}{2(A+1)}.
 	\end{equation}
-	From this, the 4 terminal device model in \ref{fig:cellresfsl} can be generated, which can easily be implemented in pspice, verilogA, or a number of other simulators. The accuracy of the model was tested using pspice, where the circuit in Fig. \ref{fig:sccell} was implemented using switches with on resistance. The resulting comparisons run can be seen in Fig. \ref{} - \ref{}, in which the models appear quite accurate for a broad range of conditions. 
+	From this, the 4 terminal device model in \ref{fig:cellresfsl} can be generated, which can easily be implemented in pspice, verilogA, or a number of other simulators. The accuracy of the model was tested using pspice, where the circuit in Fig. \ref{fig:sccell} was implemented using switches with on resistance. The resulting comparisons run can be seen in Fig. \ref{fig:resModelcomp}, it can be seen that while the model is very accurate for the $\alpha_B = \alpha_T$ case, there is substantial error when $\alpha_B \not= \alpha_T$. 
 	
-\begin{figure}
-	\centering
-	\includegraphics[width=0.5\linewidth]{4Terminal/Figures/CellRes_FSL.pdf}
-	\caption{Steady state 4 terminal model incorporating switch resistance.}
-	\label{fig:cellresfsl}
-\end{figure}
+		
+	\begin{figure}
+		\centering
+		\begin{subfigure}{0.45\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/CellRes_FSL.pdf}
+			\caption{Steady state 4 terminal model.}
+			\label{fig:cellresfsl}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.45\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/CellRes_FSL_3.pdf}
+			\caption{Modified version incorporating high frequency effects on $\alpha_B$ and $\alpha_T$.}
+			\label{fig:cellresfsl_3}
+		\end{subfigure}
+		\caption{Two models of for the switched capacitor cell incorporating switch resistance.}
+		
+	\end{figure}
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IOUT_1.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IIN_1.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IOUT_2.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IIN_2.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IOUT_3.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IIN_3.pdf}
+		\end{subfigure}
+		\caption{Comparison between simulation and model data, for the switched capacitor cell seen in Fig. \ref{fig:sccell}. The circuit conditions were $V_{OUT} = 1.85\,$V, $V_{IN} = 1\,$V, $R = 1\omega$ and $C = 1n$.}
+		\label{fig:resModelcomp}
+	\end{figure}
+	
+	This error can be understood by considering Fig. \ref{fig:Phase2Res} at high frequencies. Consider the transfer function for $V_{TP2}$ with respect to $V_{T2}$ and $V_{B2}$ is,
+	\begin{equation}
+		V_{TP2} = \frac{sRC(V_{T2}(1+\alpha_B) + V_{B2}) + V_{T2}}{s^2C^2R^2(\alpha_B + \alpha_T + \alpha_B\alpha_T) + sCR(2+\alpha_B+\alpha_T) + 1},
+	\end{equation}
+	indicating that at high frequencies, the voltage at node $V_{TP2}$ is determined by $V_{T2}$ and $V_{B2}$ in roughly equal parts. This is incorporated into the model as seen in Fig. \ref{fig:cellresfsl_3}, and the resulting comparisons can be seen in Fig. \ref{fig:resModelComp2}, where the new model appears accurate.
+
+	\begin{figure}
+		\centering
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IOUT_1_BF.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IIN_1_BF.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IOUT_2_BF.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IIN_2_BF.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IOUT_3_BF.pdf}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{4Terminal/Figures/IIN_3_BF.pdf}
+		\end{subfigure}
+		\caption{Comparison between simulation and model data, for the switched capacitor cell seen in Fig. \ref{fig:sccell}. The model has been modified to incorporate the circuit back-flow approximation. The circuit conditions were $V_{OUT} = 1.85\,$V, $V_{IN} = 1\,$V, $R = 1\omega$ and $C = 1n$.}
+		\label{fig:resModelComp2}
+	\end{figure}
 	
 	It should be noted however, that while the model in Fig. \ref{fig:cellresfsl} is compact, it does not lend itself nicely to hand calculation. Instead, the circuit in Fig. \ref{fig:cellresfsl2} is more appropriate, where 
 	\begin{equation}
-		R_{1} = \frac{A+1}{fCR(1-A(1-\alpha_T))},
+		R_{1} = \frac{(A+1)^2}{fC(1-A^2(1+\alpha_B) - A\alpha_T)},
 	\end{equation}
 	and
 	\begin{equation}
-		R_{2}  = \frac{A+1}{fCR(1-A(1-\alpha_B))}.
+		R_{2} = \frac{(A+1)^2}{fC(1-A^2(1+\alpha_T) - A\alpha_B)}.
 	\end{equation}
 	\begin{figure}
 		\centering
@@ -225,12 +292,10 @@ Switched Capacitor Power Converters (SCPCs)
 	\end{figure}
 	
 	
-	\subsection{Frequency Domain Model}
-	Depending on the way in which the SCPCs are used, there is a need to develop models which approximate the impedance of the structure. If it is assumed that the switching frequency of the structure is constant with respect to time, then the model in Fig. \ref{} provides an excellent first order approximation. The added impedance between the top and bottom plate is a result of the instantaneous connections which occur in both Phase 1 and Phase 2. As the converter is split between these two phases 50\% of the time, the impedance of the elements is doubled. 
 	
 	
-	\section{SCPC Topologies}
-	There are numerous topologies which are used in SCPC design in order to implement different voltage conversion ratios. While the SC cell in \ref{} is capable of implementing 2:1 or 1:2 conversion, many applications require different voltage conversion ratios, facilitating different architectures.
+	\section{SCPC Architectures}
+	There are numerous architectures which are used in SCPC design in order to implement different voltage conversion ratios. While the SC cell in \ref{} is capable of implementing 2:1 or 1:2 conversion, many applications require different voltage conversion ratios, facilitating different architectures.
 	\subsection{Dickson}
 	The Dickson topology can be understood from the diagram in \ref{fig:NDickson}, in which a generic $N$ stage Dickson is shown. The resulting voltage conversion ratio is N+1:1 in a buck conversion ratio, and 1:N+1 in a boost.
 	
@@ -240,23 +305,61 @@ Switched Capacitor Power Converters (SCPCs)
 		\label{fig:NDickson}
 	\end{figure}
 	
-	The benefits of the structure are that it has a constant voltage stress across all of its transistors, with increasing stress across its capacitors per stage. The output resistance and efficiency can be acquired using the models in \ref{} and \ref{}, though the choice to include switch resistance depends on the operation of the converter.
+	The benefits of the structure are that it has a constant voltage stress across all of its transistors, with increasing voltage stress across its capacitors per stage. The output resistance and efficiency can be acquired using the 4-terminal models developed in Section \ref{Sec:4TermModel}, though the choice to include switch resistance depends on how close to the FSL the converter is.
 	\subsection{Series Parallel}
-	A diagram of the Series Parallel topology is in Fig. \ref{} for a generic $N$ stages. Similar to the Dickson, the resulting conversion ratio is N+1:1 in a buck configuration, and 1:N+1 in a boost.
+	A diagram of the Series Parallel topology is in Fig. \ref{fig:NSeriesP} for a generic $N$ stages. Similar to the Dickson, the resulting conversion ratio is N+1:1 in a buck configuration, and 1:N+1 in a boost.
+	
+	\begin{figure}
+		\includegraphics[width=\linewidth]{4Terminal/Figures/NSeriesP.pdf}
+		\caption[width=\linewidth]{N-stage Series Parallel converter comprised of the cells in \ref{}.}
+		\label{fig:NSeriesP}
+	\end{figure}
 	
 	The structure features a constant stress across the flying capacitors, with switch voltage stresses depending on $N$.
-	\subsection{XXXX}
-	In the context of monolithic SCPCs, the XXXX configuration can be seen in Fig. \ref{}, with its equivalent circuit in Fig. \ref{}.
+	\subsection{Cockcroft and Walton}
+	An N-Stage Cockcroft and Walton (CW) configuration can be seen in Fig. \ref{fig:cwalton}. The corresponding voltage conversion ratio is 1:N+1.
+	
+	The primary feature of the CW SCPC architecture is its constant voltage stress across both its flying capacitors and transistors. This comes at a substantial increase in output resistance however.
+	
+\begin{figure}
+	\includegraphics[width=\linewidth]{4Terminal/Figures/CWalton.pdf}
+	\caption{N-Stage Cockcroft-Walton SCPC.}
+	\label{fig:cwalton}
+\end{figure}
 	
 	The structure features a constant stress across the flying capacitors, in addition to constant stress across the transistors.
 	
 	\subsection{Fractional Converters}
 	\subsection{Fibonacci and Exponential}
-	The Fibonacci, charge pump refers to the architecture in \ref{}, in which the VCR follows the Fibonacci sequence. The exponential charge pump architecture refers to Fig. \ref{}, in which the VCR $= 2^N$. 
+	The Fibonacci charge pump refers to the architecture in \ref{fig:fibonacci}, in which the VCR follows the Fibonacci sequence. The exponential charge pump architecture refers to Fig. \ref{fig:exponential}, in which the VCR $= 2^N$. 
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{4Terminal/Figures/Fibonacci.pdf}
+		\caption{N-Stage Fibonacci SCPC.}
+		\label{fig:fibonacci}
+	\end{figure}
+	
+	\begin{figure}
+		\centering
+		\includegraphics{4Terminal/Figures/Exponential.pdf}
+		\caption{N-Stage Exponential SCPC.}
+		\label{fig:exponential}
+	\end{figure}
 	
 	Both these architectures feature voltage, and capacitor stresses which are dependent on the number of stages. 
 
 	\subsection{Hybrid Architectures}
 	Here are various SCPC architectures which are potentially useful in a number of scenarios, depending entirely on the technology, and the desired conversion ratio.
 	
+	For example, consider the circuit in Fig. \ref{fig:StageSkip}, which could be considered a modified CW architecture. The structure maintains a constant transistor voltage stress with a capacitor voltage stress of 2$V_1$, the benefit over CW being a reduction in output resistance.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{4Terminal/Figures/StageSkip.pdf}
+		\caption{Modified Cockcroft-Walton architecture acommodating stage skipping.}
+		\label{fig:StageSkip}
+	\end{figure}
+	
+	\section{Isolating Stage}
 	

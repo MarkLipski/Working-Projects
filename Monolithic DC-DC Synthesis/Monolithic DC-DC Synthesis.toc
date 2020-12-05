@@ -3,21 +3,24 @@
 \contentsline {section}{\numberline {2.1}Four Terminal Model}{4}%
 \contentsline {subsection}{\numberline {2.1.1}Parasitic Capacitance}{6}%
 \contentsline {subsection}{\numberline {2.1.2}Switch Resistance}{6}%
-\contentsline {subsection}{\numberline {2.1.3}Frequency Domain Model}{9}%
-\contentsline {section}{\numberline {2.2}SCPC Topologies}{10}%
-\contentsline {subsection}{\numberline {2.2.1}Dickson}{10}%
-\contentsline {subsection}{\numberline {2.2.2}Series Parallel}{10}%
-\contentsline {subsection}{\numberline {2.2.3}XXXX}{11}%
-\contentsline {subsection}{\numberline {2.2.4}Fractional Converters}{11}%
-\contentsline {subsection}{\numberline {2.2.5}Fibonacci and Exponential}{11}%
-\contentsline {subsection}{\numberline {2.2.6}Hybrid Architectures}{11}%
-\contentsline {chapter}{\numberline {3}Flying Capacitor Design}{12}%
-\contentsline {chapter}{\numberline {4}Transistor Considerations}{13}%
-\contentsline {chapter}{\numberline {5}Time Interleaving}{14}%
-\contentsline {chapter}{\numberline {6}Charge Reuse}{15}%
-\contentsline {chapter}{\numberline {7}Stage Outphasing}{16}%
-\contentsline {chapter}{\numberline {8}Reconfigurable Architectures}{17}%
-\contentsline {chapter}{\numberline {9}High Accuracy Models}{18}%
-\contentsline {chapter}{\numberline {10}Control}{19}%
-\contentsline {chapter}{\numberline {11}Design Examples}{20}%
-\contentsline {chapter}{\numberline {12}Continuously Scalable}{21}%
+\contentsline {section}{\numberline {2.2}SCPC Architectures}{12}%
+\contentsline {subsection}{\numberline {2.2.1}Dickson}{12}%
+\contentsline {subsection}{\numberline {2.2.2}Series Parallel}{12}%
+\contentsline {subsection}{\numberline {2.2.3}Cockcroft and Walton}{13}%
+\contentsline {subsection}{\numberline {2.2.4}Fractional Converters}{13}%
+\contentsline {subsection}{\numberline {2.2.5}Fibonacci and Exponential}{13}%
+\contentsline {subsection}{\numberline {2.2.6}Hybrid Architectures}{14}%
+\contentsline {section}{\numberline {2.3}Isolating Stage}{14}%
+\contentsline {chapter}{\numberline {3}Flying Capacitor Design}{15}%
+\contentsline {chapter}{\numberline {4}Transistor Considerations}{16}%
+\contentsline {chapter}{\numberline {5}Time Interleaving}{17}%
+\contentsline {chapter}{\numberline {6}Charge Reuse}{18}%
+\contentsline {chapter}{\numberline {7}Stage Outphasing}{19}%
+\contentsline {chapter}{\numberline {8}Reconfigurable Architectures}{20}%
+\contentsline {chapter}{\numberline {9}Advanced Models}{21}%
+\contentsline {section}{\numberline {9.1}Transistor Leakage}{21}%
+\contentsline {subsection}{\numberline {9.1.1}Sub-Threshold Leakage}{21}%
+\contentsline {section}{\numberline {9.2}Frequency Domain Model}{21}%
+\contentsline {chapter}{\numberline {10}Control}{23}%
+\contentsline {chapter}{\numberline {11}Design Examples}{24}%
+\contentsline {chapter}{\numberline {12}Continuously Scalable}{25}%

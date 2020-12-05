@@ -190,7 +190,7 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="455.47791"
+     inkscape:cy="455.0991"
      inkscape:cx="159.73214"
      inkscape:zoom="3.959798"
      inkscape:pageshadow="2"
@@ -212,7 +212,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -240,7 +240,7 @@
          id="tspan4593"
          sodipodi:role="line">C<tspan
    id="tspan4599"
-   style="font-size:65%;baseline-shift:sub">Fly</tspan></tspan></text>
+   style="font-size:65%;baseline-shift:sub" /></tspan></text>
     <ellipse
        ry="0.39747423"
        rx="0.39746609"

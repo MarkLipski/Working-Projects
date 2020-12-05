@@ -1,0 +1,31 @@
+\chapter{Advanced Models}
+There are a number of other important effects not accounted for by the models in Chap. \ref{chap:Fundamentals}. The chapter developed functioning steady state models, but no time, or frequency domain models were developed. In addition, there are a number of technology dependent effects which can impact performance which need to be considered.
+\section{Transistor Leakage}
+One increasingly important design variable at smaller technology nodes is the impact of leakage between the various nodes of the transistors.
+\subsection{Sub-Threshold Leakage}
+Sub-Threshold leakage refers to the current that flows between the drain and the source of the transistor when the transistor is turned off. 
+
+The analysis begins by assuming that the flying capacitor cell almost completely charges and discharges each cycle. The assumption is based on the fact that this is the region in which the leakage effects have the largest impact on performance.
+
+Next, the impact on the SCPC can be understood by considering the various phases of the converter, as in Fig. \ref{}. In phase 1, $V_{TP1} = V_{T1}$, resulting in a $V_{DS}$ of $V_{T2} - V_{T1}$ across $S_{T2}$. Similarly, $V_{BP1} = V_{B1}$, making $V_{DS} = V_{B2} - V_{B1}$ for $S_{B2}$. Likewise in phase 2, the $V_{DS}$ of $S_{T1} = V_{T2} - V_{T1}$, while the $V_{DS}$ of $S_{B1} = V_{B2} - V_{B1}$. 
+
+Assuming the phases occupy equal portions of the period, then 
+\begin{equation}
+	I_{Leak,T2,T1} = \frac{I_{Leak,ST2} = I_{Leak,ST1}}{2},
+\end{equation}
+where $I_{VDS,ST2}$ denotes the drain to source leakage of $S_{T2}$, while 
+\begin{equation}
+	I_{Leak,B2,B1} = \frac{I_{Leak,SB2} = I_{Leak,SB1}}{2},
+\end{equation}
+which get incorporated into the model as in Fig. \ref{}. In order to acquire their leakage values, the transistors comprising switches must be simulated at their corresponding $V_{DS}$. Additionally, if the leakage varies substantially with $V_{DS}$, then it is advisable to include a voltage dependence. Lastly, there is temperature variation in the sub-threshold leakage which will impact performance and may need to be considered.
+
+\subsection{Gate Oxide}
+
+\section{Frequency Domain Model}
+In order to incorporate SCPC into many designs and applications, their frequency domain model is required. To begin, consider the instantaneous connections between the various terminals of the converter. 
+
+The circuits in Fig. \ref{}, provides an illustration of the instantaneous connections between nodes $V_{T2}$ and $V_{B2}$ as well as $V_{T1}$ and $V_{B1}$. This can immediately be incorporated into the model in Fig. \ref{}, resulting in Fig. \ref{}. 
+
+Next, the frequency domain model for the current flow between $V_{T2}$ and $V_{T1}$ can be generated. 
+
+Depending on the way in which the SCPCs are used, there is a need to develop models which approximate the impedance of the structure. If it is assumed that the switching frequency of the structure is constant with respect to time, then the model in Fig. \ref{} provides an excellent first order approximation. The added impedance between the top and bottom plate is a result of the instantaneous connections which occur in both Phase 1 and Phase 2. As the converter is split between these two phases 50\% of the time, the impedance of the elements is doubled. 
