@@ -1,0 +1,26 @@
+Circuit: * C:\Users\Mark\Documents\Working-Projects\Monolithic DC-DC Synthesis\AdvancedModels\spice\4Term_TB.asc
+
+I1: both pins shorted together -- ignoring.
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(x2:clk1)
+Ignoring empty pin current: Ix(x3:clk1)
+Ignoring empty pin current: Ix(x2:clk1)
+Ignoring empty pin current: Ix(x3:clk1)
+
+Date: Sun Dec 06 22:01:04 2020
+Total elapsed time: 179.777 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 10555658
+traniter = 10555655
+tranpoints = 5032564
+accept = 4878026
+rejected = 154538
+matrix size = 28
+fillins = 0
+solver = Normal
+Matrix Compiler1: 706 bytes object code size  0.4/0.3/[0.1]
+Matrix Compiler2: 1.93 KB object code size  0.2/0.4/[0.2]
+

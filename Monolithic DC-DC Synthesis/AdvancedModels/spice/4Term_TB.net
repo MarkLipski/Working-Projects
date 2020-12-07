@@ -1,0 +1,53 @@
+* C:\Users\Mark\Documents\Working-Projects\Monolithic DC-DC Synthesis\AdvancedModels\spice\4Term_TB.asc
+XX1 N001 N002 0 0 4term_model_eq params: C = 2n, RSW=1, B = 0.02, T = 0.02, fSW=5Meg
+XX2 N003 N004 N005 0 0 NC_01 NC_02 sccore params: C = 1n, RSW=0.5, B = 0.02, T = 0.02
+V1 N001 0 SINE(1 0 {fTest})
+V3 N002 0 SINE(0 0 {fTest})
+V4 N004 0 SINE(0 0 {fTest})
+V2 N003 0 SINE(0 1 {fTest})
+V5 N005 0 PULSE(0 1 0 1p 1p 0.1u 0.2u)
+XX3 N003 N004 clk 0 0 NC_03 NC_04 sccore params: C = 1n, RSW=0.5, B = 0.02, T = 0.02
+V6 clk 0 PULSE(0 1 0.1u 1p 1p 0.1u 0.2u)
+I1 0 0 PULSE(1A 0 0 1p 1p 1p 0.2u)
+
+* block symbol definitions
+.subckt 4term_model_eq B1 B2 T1 T2
+B3 N007 B1 V=(V(T2) - V(T1))
+R1 T2 N001 {(A+1)*(A+1)/(C*F*{1 - A*A*(1+B) - A*T})}
+B7 N001 T1 V=(V(B2) - V(B1))
+R3 T2 T1 {(1+A)/((A*B+T)*C*F)}
+R4 B2 B1 {(1+A)/((A*T+B)*C*F)}
+R2 B2 N007 {(A+1)*(A+1)/(C*F*{1 - A*A*(1+T) - A*B})}
+R6 T2 N003 {RSW*2}
+C1 N002 N005 {C/2}
+C2 N003 N006 {C/2}
+C3 0 N006 {B*C}
+C4 0 N003 {T*C/2}
+R7 N006 B2 {RSW*2}
+R5 T1 N002 {RSW*2}
+R8 N005 B1 {RSW*2}
+C5 0 N002 {T*C}
+C6 0 N005 {B*C}
+.param A={exp(-1/(C*fSW*RSW*(4+B+T)))}
+.param C=1n F={fSW} RSW=1000 T=0 B=0
+.ends 4term_model_eq
+
+.subckt sccore B1 B2 clk1 T1 T2 VTP VBP
+C1 VTP VBP {C}
+C2 0 VTP {T*C}
+C3 VBP 0 {B*C}
+S1 VBP B1 clk1 0 SW
+S2 B2 VBP clk2 0 SW
+S3 T2 VTP clk2 0 SW
+S4 VTP T1 clk1 0 SW
+B1 clk2 0 V=1-V(clk1)
+.model SW SW(Ron={RSW} Roff=10Meg Vt=.5 Vh=-0.05)
+.param C=1n T=0 B=0
+.ends sccore
+
+* .step dec param fTest 1Meg 100Meg 3
+.tran 0 210u 10u 50p
+.param TSig=1/fTest
+.param fTest 100k
+.backanno
+.end

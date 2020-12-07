@@ -1,0 +1,10 @@
+Circuit: * C:\Users\Mark\Documents\Working-Projects\Monolithic DC-DC Synthesis\4Terminal\SPICE\4Term_Model_EQ_TB.asc
+
+Questionable use of curly braces in "r1 t2 n001 {(a+1)*(a+1)/(c*f*{1-a*a*(1+b)-a*t})}"
+    Error: undefined symbol in: "(a+1)*(a+1)/(c*[f]*(1-a*a*(1+b)-a*t))"
+Questionable use of curly braces in "r3 t2 t1 {(1+a)/((a*b+t)*c*f)}"
+    Error: undefined symbol in: "(1+a)/((a*b+t)*c*[f])"
+Questionable use of curly braces in "r4 b2 b1 {(1+a)/((a*t+b)*c*f)}"
+    Error: undefined symbol in: "(1+a)/((a*t+b)*c*[f])"
+Questionable use of curly braces in "r2 b2 n002 {(a+1)*(a+1)/(c*f*{1-a*a*(1+t)-a*b})}"
+    Error: undefined symbol in: "(a+1)*(a+1)/(c*[f]*(1-a*a*(1+t)-a*b))"
